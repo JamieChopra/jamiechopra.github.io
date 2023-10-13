@@ -7,7 +7,6 @@ subtitle: BSc Hons Cyber Security
 I achieved a First Degree in Cyber Security and this is what I learnt
 
 Year 1:
-
 CO450-20S1 Computer Architectures-20S1
 CO452-20S1 Programming Concepts-20S1
 CO454-20S1 Digital Technologies And Professional Practice-20S1
