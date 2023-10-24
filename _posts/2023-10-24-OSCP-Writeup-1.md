@@ -127,6 +127,8 @@ individual files in /usr/share/doc/*/copyright.
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
+$ id
+uid=1000(fox) gid=1001(fox) groups=1001(fox),1000(fail2ban)
 $ 
 ~~~
 
