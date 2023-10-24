@@ -20,7 +20,8 @@ author: Some Person
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  OSCP: "OSCP"
+  University: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
