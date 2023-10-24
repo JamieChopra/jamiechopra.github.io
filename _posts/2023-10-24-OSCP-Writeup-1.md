@@ -151,7 +151,7 @@ After running Linpeas.sh a directory /etc/fail2ban was identified which is writa
 #)You_can_write_even_more_files_inside_last_directory
 ~~~
 
-A manual verification of this vulnerability was ran which identified full Read, Write, Execute (RWX) permissions over a file named action.d
+A manual verification of this vulnerability was ran which identified full Read, Write, Execute (RWX) permissions over a file named action.d which is ran by Root
 
 ~~~
 $ find /etc -writable -ls 2>/dev/null
@@ -159,3 +159,21 @@ $ find /etc -writable -ls 2>/dev/null
 ~~~
 
 After researching exploits for Fail2Ban an exploit I discovered an exploit within /etc/fail2ban/jail.conf [Exploit](https://systemweakness.com/privilege-escalation-with-fail2ban-nopasswd-d3a6ee69db49)
+
+Inspecting /etc/fail2ban/jail.conf shows that Fail2Ban is configured to only allow 2 attempts before performing the banaction
+
+Further down it shows the banaction executes iptables-multiport, we have read-write permissions over iptables-multiport.conf as shown below
+
+We then change the iptables-multiport.conf file's actionban= to include a reverse shell
+
+Start a listener on port 80
+
+Attempt to log in with invalid credentials to execute the Fail2Ban and execute our reverse shell
+┌──(kali㉿kali)-[~]
+└─$ ssh root@192.168.194.126                    
+root@192.168.194.126's password: 
+Permission denied, please try again.
+root@192.168.194.126's password: 
+Permission denied, please try again.
+root@192.168.194.126's password: 
+root@192.168.194.126: Permission denied (publickey,password).
