@@ -57,8 +57,10 @@ total size is 4,562  speedup is 29.24
 ~~~
 
 The contents of the fox folder can be retrieved and stored locally using the command
+~~~
 rsync -av rsync://192.168.194.126/fox ./rsyn_shared
-These files reveal no useful information to further our progress
+~~~
+These files reveal no useful information to further our progress.
 
 Rsync also allows us to upload files, therefore we can generate a SSH key (as we have seen SSH TCP port 22 is enabled), then upload to the key to the machine using Rsync to
 give us a remote connection to the machine.
