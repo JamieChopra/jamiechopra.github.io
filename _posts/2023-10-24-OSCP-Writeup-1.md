@@ -123,11 +123,9 @@ This host key is known by the following other names/addresses:
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '192.168.194.126' (ED25519) to the list of known hosts.
 Linux fail 4.19.0-12-amd64 #1 SMP Debian 4.19.152-1 (2020-10-18) x86_64
-
 The programs included with the Debian GNU/Linux system are free software;
 the exact distribution terms for each program are described in the
 individual files in /usr/share/doc/*/copyright.
-
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 $ id
