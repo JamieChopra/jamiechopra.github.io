@@ -865,13 +865,13 @@ table tr td :last-child {
 code {
   padding: 0.125rem 0.25rem;
   color: #c7254e;
-  background-color: #000000;
+  background-color: #f9f2f4;
   border-radius: 0.25rem;
 }
 
 pre code {
   padding: 0;
-  background-color: transparent;
+  background-color: black;
   border-radius: 0;
 }
 
