@@ -20,6 +20,7 @@ author: Some Person
 ###############################################
 
 navbar-links:
+  OSCP: "OSCP"
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
