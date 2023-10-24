@@ -169,6 +169,7 @@ Further down it shows the banaction executes iptables-multiport, we have read-wr
 ![Fail](/assets/img/FailPG(2).png)
 
 We then change the iptables-multiport.conf file's actionban= to include a reverse shell
+
 Before
 
 ![Fail](/assets/img/FailPG(3).png)
@@ -180,6 +181,7 @@ After
 Start a listener on port 80
 
 Attempt to log in with invalid credentials to execute the Fail2Ban and execute our reverse shell
+~~~
 ┌──(kali㉿kali)-[~]
 └─$ ssh root@192.168.194.126                    
 root@192.168.194.126's password: 
@@ -188,7 +190,7 @@ root@192.168.194.126's password:
 Permission denied, please try again.
 root@192.168.194.126's password: 
 root@192.168.194.126: Permission denied (publickey,password).
-
+~~~
 We then recieve our root shell on the netcat listener on port 80
 
 ![Fail](/assets/img/FailPG(5).png)
