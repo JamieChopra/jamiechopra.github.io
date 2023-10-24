@@ -1,16 +1,10 @@
 ---
 layout: post
 title: PG | PayDay
-subtitle: There's lots to learn!
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
-comments: true
+subtitle: Things normally go smooth on payday.
 ---
 
-# PG | PayDay
-
-## Nmap Scan Results
+# Nmap Scan Results
 
 ~~~
 var foo = function(x) {
@@ -19,8 +13,8 @@ var foo = function(x) {
 foo(3)
 ~~~
 
-## Service Enumeration
+# Service Enumeration
 
-## Exploitation
+# Exploitation
 
-## Privilege Escalation
+# Privilege Escalation
