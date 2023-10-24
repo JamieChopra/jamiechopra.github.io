@@ -148,7 +148,7 @@ After running Linpeas.sh a directory /etc/fail2ban was identified which is writa
 /etc/fail2ban/action.d/firewallcmd-multiport.conf
 /etc/fail2ban/action.d/mail-whois.conf
 /etc/fail2ban/action.d/ufw.conf
-#)You_can_write_even_more_files_inside_last_directory
+You_can_write_even_more_files_inside_last_directory
 ~~~
 
 A manual verification of this vulnerability was ran which identified full Read, Write, Execute (RWX) permissions over a file named action.d which is ran by Root
