@@ -161,16 +161,16 @@ $ find /etc -writable -ls 2>/dev/null
 After researching exploits for Fail2Ban an exploit I discovered an exploit within /etc/fail2ban/jail.conf [Exploit](https://systemweakness.com/privilege-escalation-with-fail2ban-nopasswd-d3a6ee69db49)
 
 Inspecting /etc/fail2ban/jail.conf shows that Fail2Ban is configured to only allow 2 attempts before performing the banaction (maxretry) as shown below
-![Fail](/assets/img/Fail(1).jpg)
+![Fail](/assets/img/FailPG(1).jpg)
 
 Further down it shows the banaction executes iptables-multiport, we have read-write permissions over iptables-multiport.conf as shown below
-![Fail](/assets/img/Fail(2).jpg)
+![Fail](/assets/img/FailPG(2).jpg)
 
 We then change the iptables-multiport.conf file's actionban= to include a reverse shell
 Before
-![Fail](/assets/img/Fail(3).jpg)
+![Fail](/assets/img/FailPG(3).jpg)
 After
-![Fail](/assets/img/Fail(4).jpg)
+![Fail](/assets/img/FailPG(4).jpg)
 
 Start a listener on port 80
 
@@ -186,4 +186,4 @@ root@192.168.194.126: Permission denied (publickey,password).
 
 We then recieve our root shell on the netcat listener on port 80
 
-![Fail](/assets/img/Fail(5).jpg)
+![Fail](/assets/img/FailPG(5).jpg)
