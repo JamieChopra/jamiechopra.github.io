@@ -65,6 +65,8 @@ These files reveal no useful information to further our progress.
 Rsync also allows us to upload files, therefore we can generate a SSH key (as we have seen SSH TCP port 22 is enabled), then upload to the key to the machine using Rsync to
 give us a remote connection to the machine.
 
+# Exploitation
+
 1. Generate SSH Key
 ~~~
 ┌──(kali㉿kali)-[~/Desktop/Fail]
@@ -132,6 +134,28 @@ uid=1000(fox) gid=1001(fox) groups=1001(fox),1000(fail2ban)
 $ 
 ~~~
 
-# Exploitation
-
 # Privilege Escalation
+
+After running Linpeas.sh a directory /etc/fail2ban was identified which is writable by our user
+
+~~~
+╔══════════╣ Interesting GROUP writable files (not in Home) (max 500)
+╚ https://book.hacktricks.xyz/linux-hardening/privilege-escalation#writable-files                                                                                            
+  Group fail2ban:                                                                                                                                                            
+/etc/fail2ban/action.d                                                                                                                                                       
+/etc/fail2ban/action.d/firewallcmd-ipset.conf
+/etc/fail2ban/action.d/nftables-multiport.conf
+/etc/fail2ban/action.d/firewallcmd-multiport.conf
+/etc/fail2ban/action.d/mail-whois.conf
+/etc/fail2ban/action.d/ufw.conf
+#)You_can_write_even_more_files_inside_last_directory
+~~~
+
+A manual verification of this vulnerability was ran which identified full Read, Write, Execute (RWX) permissions over a file named action.d
+
+~~~
+$ find /etc -writable -ls 2>/dev/null
+   787482      4 drwxrwxr-x   2 root     fail2ban     4096 Dec  3  2020 /etc/fail2ban/action.d
+~~~
+
+After researching exploits for Fail2Ban an exploit I discovered an exploit within /etc/fail2ban/jail.conf [Exploit](https://systemweakness.com/privilege-escalation-with-fail2ban-nopasswd-d3a6ee69db49)
