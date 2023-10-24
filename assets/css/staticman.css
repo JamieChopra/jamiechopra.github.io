@@ -178,3 +178,9 @@
   padding-top: 2em;
   border-top: 1px solid #f2f3f3;
 }
+.markdown-body {
+  --md-code-background: #000000;
+  --md-code-text: #4a2b7b;
+  --md-code-tabs: #c6b8dd;
+  --md-code-radius: 4px;
+}
