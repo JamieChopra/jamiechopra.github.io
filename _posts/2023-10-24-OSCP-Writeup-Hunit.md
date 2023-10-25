@@ -6,7 +6,7 @@ subtitle: Hunit - the goddess of the 26th day of the month.
 
 # Nmap Scan Results
 
-~~~
+~~~shell
 Starting Nmap 7.94 ( https://nmap.org ) at 2023-10-25 11:38 UTC
 Nmap scan report for 192.168.191.125
 Host is up (0.014s latency).
@@ -85,18 +85,24 @@ Nmap done: 1 IP address (1 host up) scanned in 231.48 seconds
 # Service Enumeration
 
 ## HTTP (TCP/8080)
+
+![Hunit](/assets/img/HunitPG(1).png)
+
 I started by running a Gobuster sub-directory scan in the background and navigating the sourcecode of each webpage and found a HTML comment referring to a /api sub-directory view-source:http://192.168.191.125:8080/article/the-taste-of-rain
 
-IMG 2
+![Hunit](/assets/img/HunitPG(2).png)
 
 Upon navigating to the /api directory http://192.168.168.191.125:8080/api a public facing JSON api is displayed showing other sub-directories including articles (which we have already seen) and a /user sub-directory.
 
+![Hunit](/assets/img/HunitPG(3).png)
+
 Navigating deeper into http://192.168.191.125:8080/api/user/ we are presented with a list of user credentials as shown below
 
-IMG 3
+![Hunit](/assets/img/HunitPG(4).png)
 
 The dademola account has "Admin" in its description, so we will attempt to authenticate with those credentials via SSH on port 43022 first (dademola:ExplainSlowQuest110)
 
+# Exploitation
 ~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Hunit]
 └─$ ssh dademola@192.168.191.125 -p 43022             
@@ -114,7 +120,7 @@ dademola
 
 And now we have our initial foothold!
 
-
+# Privilege Escalation
 I started the privilege escalation by running a linpeas.sh scan and identified two cronjob scheduled files running as root every 2 and 3 minutes named 'git-server/backups.sh' and 'pull.sh'
 ~~~shell
 /var/spool/anacron:
@@ -129,6 +135,8 @@ drwxr-xr-x 6 root root 4096 Nov  6  2020 ..
 ~~~
 
 There was also a SSH private key (as shown below) to another user account named 'git' which we can assume is running the git-server, so we can pivot to that user to see if the user has permissions to edit either 'pull.sh' or 'backups.sh' cronjobs to contain a reverse shell so when they are executed every 2 or 3 minutes by root the reverse shell will be executed with root privileges
+
+![Hunit](/assets/img/HunitPG(5).png)
 
 ~~~shell
 ╔══════════╣ Analyzing SSH Files (limit 70)                                                                                                                                  
@@ -193,7 +201,7 @@ We can then SSH into the git account where we recieve a git shell
 git> 
 ~~~
 
-To perform privilege escalation as discussed in this post(https://www.hackingarticles.in/linux-for-pentester-git-privilege-escalation/) we can  clone the git repository locally, manipulate backups.sh to contain our reverse shell then push the changes to the master so when the master branch (target machine) runs our malicious backups.sh it will execute the reverse shell and grant us a root shell
+To perform privilege escalation as discussed in this [post](https://www.hackingarticles.in/linux-for-pentester-git-privilege-escalation/) we can  clone the git repository locally, manipulate backups.sh to contain our reverse shell then push the changes to the master so when the master branch (target machine) runs our malicious backups.sh it will execute the reverse shell and grant us a root shell
 
 I attempted to clone the repository using git, however the SSH connection is running on port 43022 not port 22 and we need to use a Private Key to connect so it did not work
 ~~~shell
@@ -203,7 +211,7 @@ Cloning into 'git-server'...
 ^C
 ~~~
 
-After researching a workaround(https://stackoverflow.com/questions/4565700/how-to-specify-the-private-ssh-key-to-use-when-executing-shell-command-on-git/29754018#29754018) I found the command GIT_SSH_COMMAND='ssh -i private_key_file -o IdentitiesOnly=yes' git clone user@host:repo.git
+After researching a [workaround](https://stackoverflow.com/questions/4565700/how-to-specify-the-private-ssh-key-to-use-when-executing-shell-command-on-git/29754018#29754018) I found the command GIT_SSH_COMMAND='ssh -i private_key_file -o IdentitiesOnly=yes' git clone user@host:repo.git
 ~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Hunit]
 └─$ GIT_SSH_COMMAND='ssh -i id_rsa -p 43022 -o IdentitiesOnly=yes' git clone git@192.168.191.125:/git-server
@@ -225,7 +233,7 @@ Create a git account locally
 ~~~
 
 Append backups.sh to include a reverse shell and make backups.sh executable
-IMGOFREVSHELL
+![Hunit](/assets/img/HunitPG(6).png)
 
 ~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Hunit]
