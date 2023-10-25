@@ -227,7 +227,10 @@ Create a git account locally
 Append backups.sh to include a reverse shell and make backups.sh executable
 IMGOFREVSHELL
 
-chmod +x backups.sh
+~~~shell
+┌──(kali㉿kali)-[~/Desktop/Hunit]
+└─$ chmod +x id_rsa   
+~~~
 
 Create a listener on port 8080
 ~~~shell
