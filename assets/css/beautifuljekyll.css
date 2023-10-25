@@ -883,7 +883,7 @@ pre {
 }
 .highlight pre {
   border: none;
-  background: none;
+  background: black;
   margin: 0;
 }
 .highlight > pre {
