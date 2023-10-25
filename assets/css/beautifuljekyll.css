@@ -865,13 +865,13 @@ table tr td :last-child {
 code {
   padding: 0.125rem 0.25rem;
   color: #c7254e;
-  background-color: #000000;
+  background-color: #252525;
   border-radius: 0.25rem;
 }
 
 pre code {
   padding: 0;
-  background-color: black;
+  background-color: #bfbfbf;
   border-radius: 0;
 }
 
@@ -883,7 +883,7 @@ pre {
 }
 .highlight pre {
   border: none;
-  background: black;
+  background: none;
   margin: 0;
 }
 .highlight > pre {
