@@ -208,11 +208,12 @@ Create listener on port 443
 listening on [any] 443 ...
 ~~~
 
-Execute JuicyPotato to connect to our netcat listener specifying a CLSID to impersonate from [here](https://github.com/ohpe/juicy-potato/tree/master/CLSID/Windows_Server_2008_R2_Enterprise) (I used {9B1F122C-2982-4e91-AA8B-E071D54F2A4D})
+Execute JuicyPotato to connect to our netcat listener specifying a CLSID to impersonate from [here](https://github.com/ohpe/juicy-potato/tree/master/CLSID/Windows_Server_2008_R2_Enterprise) 
+(I used {9B1F122C-2982-4e91-AA8B-E071D54F2A4D})
 
 ![AuthBy](/assets/img/AuthByPG(8).png)
 
-And we recieve our root(system) shell!
+And we recieve our root (system) shell!
 
 ~~~shell
 ┌──(kali㉿kali)-[~/Desktop/AuthBy]
