@@ -123,7 +123,7 @@ This did not reveal any avaiable webpages, however it did verify that both .htpa
 
 ![AuthBy](/assets/img/AuthByPG(4).png)
 
-I then stored [this](https://github.com/Dhayalanb/windows-php-reverse-shell) windows php reverse shell on the FTP server changing the IP, Port and tmpdir
+I then uploaded [this](https://github.com/Dhayalanb/windows-php-reverse-shell) windows php reverse shell on the FTP server changing the IP, Port and tmpdir
 
 ![AuthBy](/assets/img/AuthByPG(5).png)
 
