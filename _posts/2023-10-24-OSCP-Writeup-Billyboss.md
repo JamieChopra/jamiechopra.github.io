@@ -53,7 +53,7 @@ Nmap done: 1 IP address (1 host up) scanned in 206.53 seconds
 ## FTP (TCP/21)
 
 The FTP server does not allow anonymous connections
-
+~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Billyboss]
 └─$ ftp anonymous@192.168.182.61 
 Connected to 192.168.182.61.
@@ -63,7 +63,7 @@ ftp: Login failed
 ftp> 
 ftp> 
 zsh: suspended  ftp anonymous@192.168.182.61
-
+~~~
 ## HTTP (TCP/80)
 
 The web server on port 80 is hosting BaGet, after researching for exploits I could not find one for this application
