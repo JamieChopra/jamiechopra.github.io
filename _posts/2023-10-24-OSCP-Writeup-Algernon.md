@@ -91,13 +91,13 @@ The target is hosting an FTP server that allows anonymous connections, after dow
 └─$ wget -m --no-passive ftp://anonymous:anonymous@192.168.182.65 
 ~~~
 
-![Algernon](/assets/img/AlgernonByPG(1).png)
+![Algernon](/assets/img/AlgernonPG(1).png)
 
 ## HTTP (TCP/80)
 
 An Apache web server is running on port 80
 
-![Algernon](/assets/img/AlgernonByPG(2).png)
+![Algernon](/assets/img/AlgernonPG(2).png)
 
 I ran a sub-directory fuzzing scan and checked the webpages source code, but neither revealed anything of use
 
@@ -105,11 +105,11 @@ I ran a sub-directory fuzzing scan and checked the webpages source code, but nei
 
 A SmarterMail web mail server is being hosted on port 9998 on the target machine where we are prompted for login credentials, the default SmarterMail credentials admin:admin failed
 
-![Algernon](/assets/img/AlgernonByPG(3).png)
+![Algernon](/assets/img/AlgernonPG(3).png)
 
 I searched for exploits for SmarterMail and found a Remote Code Execution (RCE) exploit
 
-![Algernon](/assets/img/AlgernonByPG(4).png)
+![Algernon](/assets/img/AlgernonPG(4).png)
 
 I copied the exploit to my current directory, then changed the target IP and local IP/Port for the shell (I used port 445 to avoid firewall restrictions as it is used for SMB)
 
@@ -118,7 +118,7 @@ I copied the exploit to my current directory, then changed the target IP and loc
 └─$ cp /usr/share/exploitdb/exploits/windows/remote/49216.py .
 ~~~
 
-![Algernon](/assets/img/AlgernonByPG(5).png)
+![Algernon](/assets/img/AlgernonPG(5).png)
 
 I started a netcat listener on port 445
 
