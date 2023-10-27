@@ -73,11 +73,11 @@ The web server on port 80 is hosting BaGet, after researching for exploits I cou
 ## SMB (TCP/139, 445)
 
 The SMB server does not allow NULL connections
-
+~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Billyboss]
 └─$ smbclient -N -L //192.168.182.61                     
 session setup failed: NT_STATUS_ACCESS_DENIED
-
+~~~
 ## HTTP (TCP/8081)
 
 The web server on port 8081 is running 'Sonatype Nexus Repository Manager'
@@ -97,7 +97,7 @@ I intercepted the login request using BurpSuite to find the HTTP Auth parameters
 ![Billyboss](/assets/img/BillybossPG(4).png)
 
 The parameters I found were username= and password= and they were both base64 encoded, I also set the failed attempt parameter to the HTTP 403
-
+~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Billyboss]
 └─$ hydra -I -f -l admin -P xato-net-10-million-passwords-10000.txt 'http-post-form://192.168.182.61:8081/service/rapture/session:username=^USER64^&password=^PASS64^:C=/:F=403'
 Hydra v9.4 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
@@ -109,7 +109,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-10-27 14:51:
 [STATUS] 2971.00 tries/min, 8913 tries in 00:03h, 1087 to do in 00:01h, 16 active
 1 of 1 target completed, 0 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-10-27 14:54:44
-
+~~~shell
 The brute force on the admin account was unsuccessful, so I created a custom username/password list by pulling keywords from the website using the CeWL tool
 ~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Billyboss]
