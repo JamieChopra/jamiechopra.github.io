@@ -245,7 +245,7 @@ On the Forgot Password section credentials I attempted to enter 'e e e' which st
 
 ![Medjed](/assets/img/MedjedPG(7).png)
 
-However, when using the same combination with username as evren.eagan it returns 'The password reminder doesn't match the records', therefore I found the naming format of firstname.lastname
+However, when using the same combination with username as evren.eagan it returns 'The password reminder doesn't match the records', therefore the naming format for users is firstname.lastname
 
 ![Medjed](/assets/img/MedjedPG(8).png)
 
@@ -263,24 +263,29 @@ I then changed the path to an invalid path (http://192.168.182.127:33033/help) t
 
 ![Medjed](/assets/img/MedjedPG(11).png)
 
+![Medjed](/assets/img/MedjedPG(12).png)
+
 I entered a ' into the input to test for SQL injections and it brought me to an error page as shown below that displayed our input being fed into an SQL query (we have an error-based SQL injection!)
 ~~~sql
 sql = "SELECT username FROM users WHERE username = '" + params[:URL].to_s + "'"
 ~~~
 
-![Medjed](/assets/img/MedjedPG(12).png)
+![Medjed](/assets/img/MedjedPG(13).png)
 
 # Exploit
 
 With assistance from [PayloadAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/MySQL%20Injection.md) I can SQL Injection to create a web shell, however I need to find a way to access the shell.
 
-As identified in the Nmap scan, the target machine is also hosting an Apache Web Server on port 45332 as shown below. After running a gobuster directory scan I found a /phpinfo.php page which showed a Loaded Configuration File in an XAMPP directory C:\xampp\php\, therefore In my SQL Injection I could store the web shell in this directory, then access the webshell through http://192.168.182.127:45332/shell.php
+As identified in the Nmap scan, the target machine is also hosting an Apache Web Server on port 45332. 
+After running a gobuster directory scan I found a /phpinfo.php page which showed a Loaded Configuration File in an XAMPP directory C:\xampp\php\, therefore In my SQL Injection I could store the web shell in this directory, then access the webshell through http://192.168.182.127:45332/shell.php
 ~~~shell
 ┌──(kali㉿kali)-[~]
 └─$ gobuster dir -u http://192.168.182.127:45332 -w /usr/share/dirb/wordlists/common.txt -x .txt,.php -t 30
 ~~~
 
-IMG 13
+![Medjed](/assets/img/MedjedPG(14).png)
+
+![Medjed](/assets/img/MedjedPG(15).png)
 
 The final SQL Injection payload was:
 ~~~sql
@@ -288,7 +293,7 @@ The final SQL Injection payload was:
 ~~~
 I could then perform commands through my webshell
 
-IMG 14
+![Medjed](/assets/img/MedjedPG(16).png)
 
 To get a stable interactive reverse shell on the machine I generated a MSFVenom .exe reverse shell payload, transferred it via a web file transfer, started my netcat listener, then executed it via the webpage
 ~~~shell
@@ -332,7 +337,7 @@ C:\xampp\htdocs>
 
 I ran a Privilege Escalation enumeration scan using winPEAS and found an AutoRun binary bd.exe our user has write permissions over.
 
-IMG 15
+![Medjed](/assets/img/MedjedPG(17).png)
 
 As discussed in this [exploit](https://www.exploit-db.com/exploits/48789), we can overwrite this binary with our own malicious application, we will generate a reverse shell and then reboot the computer so when the application runs on boot (AutoRun), it will run with root (system) permissions and therefore our malicious binary will run with root (system) permissions
 
