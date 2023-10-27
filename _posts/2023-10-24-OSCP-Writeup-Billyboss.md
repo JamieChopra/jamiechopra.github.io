@@ -109,7 +109,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2023-10-27 14:51:
 [STATUS] 2971.00 tries/min, 8913 tries in 00:03h, 1087 to do in 00:01h, 16 active
 1 of 1 target completed, 0 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2023-10-27 14:54:44
-~~~shell
+~~~
 The brute force on the admin account was unsuccessful, so I created a custom username/password list by pulling keywords from the website using the CeWL tool
 ~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Billyboss]
