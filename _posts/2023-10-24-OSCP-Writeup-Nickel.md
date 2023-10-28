@@ -86,14 +86,19 @@ The website on 8081 displays a DevOps API, when inspecting the page source it sh
 
 ![Nickel](/assets/img/NickelPG(1).png)
 
-~~~shell
+
 I replicated the HTTP GET requests using curl, but each of the get requests failed
+~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Nickel]
 └─$ curl -X GET http://192.168.191.99:33333/list-active-nodes
 <p>Cannot "GET" /list-active-nodes</p>
+~~~
+~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Nickel]
 └─$ curl -X GET http://192.168.191.99:33333/list-running-procs
 <p>Cannot "GET" /list-running-procs</p> 
+~~~
+~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Nickel]
 └─$ curl -X GET http://192.168.191.99:33333/list-current-deployments
 <p>Cannot "GET" /list-current-deployments</p>
