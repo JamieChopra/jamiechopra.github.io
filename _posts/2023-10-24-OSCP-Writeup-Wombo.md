@@ -167,13 +167,17 @@ Nmap done: 1 IP address (1 host up) scanned in 177.71 seconds
 
 An Nginx web server is running on port 80
 
-IMG 1
+![Wombo](/assets/img/WomboPG(1).png)
 
 I ran a gobuster sub-directory scan and nothing came back so moved onto the next port for enumeration
+
+![Wombo](/assets/img/WomboPG(2).png)
 
 ## Redis (TCP/6379)
 
 A Redis database runing version 5.0.9 is being hosted on port 6379, a quick vulnerability search using searchsploit revealed an Unauthenticated Code Execution ([Metasploit 47195.rb](https://www.exploit-db.com/exploits/47195)), there is also a python version of the same exploit [here](https://github.com/Ridter/redis-rce)
+
+![Wombo](/assets/img/WomboPG(3).png)
 
 I started by transferring the exploit from ExploitDB to my metasploit modules
 ~~~shell
@@ -190,7 +194,7 @@ msf6 > reload_all
 ~~~
 I loaded the Metasploit module for the Redis exploit
 
-IMG 2
+![Wombo](/assets/img/WomboPG(4).png)
 
 Set the configuration options to match the target and our attack machine for the shell
 ~~~shell
