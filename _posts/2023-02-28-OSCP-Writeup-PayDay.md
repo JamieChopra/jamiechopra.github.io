@@ -121,7 +121,7 @@ At first I attempted to upload a PHP web shell file but the .php extension was b
 
 ![PayDay](/assets/img/PayDayPG(4).png)
 
-I then ran an 'id' command at 'http://192.168.182.39/skins/shell.phtml' to test the web shell and it succeeded!
+I then ran an 'id' command at http://192.168.182.39/skins/shell.phtml to test the web shell and it succeeded!
 
 ![PayDay](/assets/img/PayDayPG(5).png)
 
