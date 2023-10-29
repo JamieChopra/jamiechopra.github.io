@@ -25,78 +25,6 @@ PORT      STATE  SERVICE    VERSION
 8080/tcp  open   http-proxy
 | http-robots.txt: 3 disallowed entries 
 |_/admin/ /reset/ /compose
-| fingerprint-strings: 
-|   FourOhFourRequest: 
-|     HTTP/1.1 404 Not Found
-|     X-DNS-Prefetch-Control: off
-|     X-Frame-Options: SAMEORIGIN
-|     X-Download-Options: noopen
-|     X-Content-Type-Options: nosniff
-|     X-XSS-Protection: 1; mode=block
-|     Referrer-Policy: strict-origin-when-cross-origin
-|     X-Powered-By: NodeBB
-|     set-cookie: _csrf=_P1tvNdYIWxn7FGd_l8tEKx1; Path=/
-|     Content-Type: text/html; charset=utf-8
-|     Content-Length: 11098
-|     ETag: W/"2b5a-0rnsjNPL5+HCx/jb8AGonhJAfxo"
-|     Vary: Accept-Encoding
-|     Date: Sun, 29 Oct 2023 10:19:53 GMT
-|     Connection: close
-|     <!DOCTYPE html>
-|     <html lang="en-GB" data-dir="ltr" style="direction: ltr;" >
-|     <head>
-|     <title>Not Found | NodeBB</title>
-|     <meta name="viewport" content="width&#x3D;device-width, initial-scale&#x3D;1.0" />
-|     <meta name="content-type" content="text/html; charset=UTF-8" />
-|     <meta name="apple-mobile-web-app-capable" content="yes" />
-|     <meta name="mobile-web-app-capable" content="yes" />
-|     <meta property="og:site_n
-|   GetRequest: 
-|     HTTP/1.1 200 OK
-|     X-DNS-Prefetch-Control: off
-|     X-Frame-Options: SAMEORIGIN
-|     X-Download-Options: noopen
-|     X-Content-Type-Options: nosniff
-|     X-XSS-Protection: 1; mode=block
-|     Referrer-Policy: strict-origin-when-cross-origin
-|     X-Powered-By: NodeBB
-|     set-cookie: _csrf=sZl99HLi85nurumtODjk2z-0; Path=/
-|     Content-Type: text/html; charset=utf-8
-|     Content-Length: 18181
-|     ETag: W/"4705-MYZRQcxaJ0JALeqjwXJQhrx45BI"
-|     Vary: Accept-Encoding
-|     Date: Sun, 29 Oct 2023 10:19:53 GMT
-|     Connection: close
-|     <!DOCTYPE html>
-|     <html lang="en-GB" data-dir="ltr" style="direction: ltr;" >
-|     <head>
-|     <title>Home | NodeBB</title>
-|     <meta name="viewport" content="width&#x3D;device-width, initial-scale&#x3D;1.0" />
-|     <meta name="content-type" content="text/html; charset=UTF-8" />
-|     <meta name="apple-mobile-web-app-capable" content="yes" />
-|     <meta name="mobile-web-app-capable" content="yes" />
-|     <meta property="og:site_name" content
-|   HTTPOptions: 
-|     HTTP/1.1 200 OK
-|     X-DNS-Prefetch-Control: off
-|     X-Frame-Options: SAMEORIGIN
-|     X-Download-Options: noopen
-|     X-Content-Type-Options: nosniff
-|     X-XSS-Protection: 1; mode=block
-|     Referrer-Policy: strict-origin-when-cross-origin
-|     X-Powered-By: NodeBB
-|     Allow: GET,HEAD
-|     Content-Type: text/html; charset=utf-8
-|     Content-Length: 8
-|     ETag: W/"8-ZRAf8oNBS3Bjb/SU2GYZCmbtmXg"
-|     Vary: Accept-Encoding
-|     Date: Sun, 29 Oct 2023 10:19:53 GMT
-|     Connection: close
-|     GET,HEAD
-|   RTSPRequest: 
-|     HTTP/1.1 400 Bad Request
-|_    Connection: close
-|_http-title: Home | NodeBB
 27017/tcp open   mongodb    MongoDB
 | mongodb-info: 
 |   MongoDB Build info
@@ -107,56 +35,7 @@ PORT      STATE  SERVICE    VERSION
 |       2 = mmapv1
 |       3 = wiredTiger
 |       0 = devnull
-|     buildEnvironment
-|       ccflags = -fno-omit-frame-pointer -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -Werror -O2 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-but-set-variable -Wno-missing-braces -fstack-protector-strong -fno-builtin-memcmp
-|       cc = /opt/mongodbtoolchain/v2/bin/gcc: gcc (GCC) 5.4.0
-|       linkflags = -pthread -Wl,-z,now -rdynamic -Wl,--fatal-warnings -fstack-protector-strong -fuse-ld=gold -Wl,--build-id -Wl,--hash-style=gnu -Wl,-z,noexecstack -Wl,--warn-execstack -Wl,-z,relro
-|       distarch = x86_64
-|       cxxflags = -Woverloaded-virtual -Wno-maybe-uninitialized -std=c++14
-|       target_os = linux
-|       cxx = /opt/mongodbtoolchain/v2/bin/g++: g++ (GCC) 5.4.0
-|       distmod = debian92
-|       target_arch = x86_64
-|     modules
-|     openssl
-|       compiled = OpenSSL 1.1.0l  10 Sep 2019
-|       running = OpenSSL 1.1.0l  10 Sep 2019
-|     bits = 64
-|     maxBsonObjectSize = 16777216
-|     version = 4.0.18
-|     debug = false
-|     javascriptEngine = mozjs
-|     gitVersion = 6883bdfb8b8cff32176b1fd176df04da9165fd67
-|     versionArray
-|       1 = 0
-|       2 = 18
-|       3 = 0
-|       0 = 4
-|     sysInfo = deprecated
-|   Server status
-|     code = 13
-|     codeName = Unauthorized
-|     ok = 0.0
-|_    errmsg = command serverStatus requires authentication
-| fingerprint-strings: 
-|   FourOhFourRequest, GetRequest: 
-|     HTTP/1.0 200 OK
-|     Connection: close
-|     Content-Type: text/plain
-|     Content-Length: 85
-|     looks like you are trying to access MongoDB over HTTP on the native driver port.
-|   mongodb: 
-|     \x01
-|     errmsg
-|     command serverStatus requires authentication
-|     code
-|     codeName
-|_    Unauthorized
-| mongodb-databases: 
-|   code = 13
-|   codeName = Unauthorized
-|   ok = 0.0
-|_  errmsg = command listDatabases requires authentication
+
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
