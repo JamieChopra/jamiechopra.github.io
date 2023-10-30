@@ -1,6 +1,8 @@
 ---
 layout: page
-cover-img: /assets/img/UniversityBookshelf
+title: Buckinghamshire New University
+subtitle: BSc Hons Cyber Security
+cover-img: /assets/img/UniversityBookshelf.png
 ---
 
 This page is a collection of the modules I took at University
