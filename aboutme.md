@@ -4,7 +4,7 @@ title: Buckinghamshire New University
 subtitle: BSc Hons Cyber Security
 ---
 
-I achieved a First Degree in Cyber Security and this is what I learnt
+This page is a collection of the modules I took at University
 
 ## Year 1
 
