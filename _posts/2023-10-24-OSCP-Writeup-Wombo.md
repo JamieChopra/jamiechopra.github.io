@@ -2,7 +2,7 @@
 layout: post
 title: PG | Wombo
 subtitle: Wombo is full of the freshest hipster tech around.
-thumbnail-img: OffSec.png
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results
