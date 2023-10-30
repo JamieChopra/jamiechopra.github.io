@@ -2,6 +2,7 @@
 layout: post
 title: PG | Slort
 subtitle: For this machine, enumeration is key.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results
