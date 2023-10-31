@@ -2,6 +2,7 @@
 layout: post
 title: PG | Zino
 subtitle: Good introduction to basic fundamentals.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results
