@@ -2,6 +2,7 @@
 layout: post
 title: PG | PayDay
 subtitle: Things normally go smooth on payday.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results

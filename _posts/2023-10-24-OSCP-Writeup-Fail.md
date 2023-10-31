@@ -2,6 +2,7 @@
 layout: post
 title: PG | Fail
 subtitle: You shall not pass.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results

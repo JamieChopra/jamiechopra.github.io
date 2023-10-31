@@ -2,6 +2,7 @@
 layout: post
 title: PG | Medjed
 subtitle: Medjed - The Smiter, who belongs to the House of Osiris, who shoots with his eye, yet is unseen.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results

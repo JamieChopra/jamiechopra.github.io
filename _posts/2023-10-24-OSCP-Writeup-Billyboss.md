@@ -2,6 +2,7 @@
 layout: post
 title: PG | Billyboss
 subtitle: Billyboss will keep your artefacts safe, secure and with a smile.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results

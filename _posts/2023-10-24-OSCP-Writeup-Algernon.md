@@ -2,6 +2,7 @@
 layout: post
 title: PG | Algernon
 subtitle: Algernon sure is a clever one.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results

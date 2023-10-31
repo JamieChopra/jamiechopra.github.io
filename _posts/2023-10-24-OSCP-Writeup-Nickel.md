@@ -2,6 +2,7 @@
 layout: post
 title: PG | Nickel
 subtitle: We require more minerals.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results

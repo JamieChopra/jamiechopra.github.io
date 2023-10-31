@@ -2,6 +2,7 @@
 layout: post
 title: PG | Kevin
 subtitle: Effective enumeration will save you time.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results

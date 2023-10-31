@@ -2,6 +2,7 @@
 layout: post
 title: PG | Dibble
 subtitle: A good tool for making holes with. Careful you don't stick yourself!
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results
@@ -167,6 +168,8 @@ We manipulate the value 'default' and replace it with 'admin' base64 encoded to 
 When attempting to create a 'New Event Log' with our new admin userLevel cookie it works!
 
 ![Dibble](/assets/img/DibblePG(9).png)
+
+# Exploitation
 
 We now need to attempt to upload a reverse shell compatible with Node.js and with the assistance of [PayloadAllThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#nodejs) we have one
 

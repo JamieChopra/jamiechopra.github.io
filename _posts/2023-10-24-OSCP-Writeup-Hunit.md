@@ -2,6 +2,7 @@
 layout: post
 title: PG | Hunit
 subtitle: Hunit - the goddess of the 26th day of the month.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results

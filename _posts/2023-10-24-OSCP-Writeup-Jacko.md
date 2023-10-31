@@ -2,6 +2,7 @@
 layout: post
 title: PG | Jacko
 subtitle: A machine best paired with a nice cup of coffee.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results
@@ -74,6 +75,8 @@ The left panel shows us our current user 'sa' has admin permissions and the curr
 
 ![Jacko](/assets/img/JackoPG(3).png)
 
+# Exploitation
+
 I searched for exploits relating to the H2 Database version 1.4.199 and found this [exploit](https://www.exploit-db.com/exploits/49384) which allows remote code execution by:
 1. Writing a native java library to the H2 servers disk using the H2 function 'CSVWRITE'
 2. Loads the library using 'java.lang.System.load'
@@ -133,6 +136,8 @@ Microsoft Windows [Version 10.0.18363.836]
 
 C:\Program Files (x86)\H2\service>
 ~~~
+
+# Privilege Escalation
 
 When navigating around the filesystem I found an application in Program Files (x86) named PaperStream IP, I then searched it up for exploits and found [this](https://www.exploit-db.com/exploits/49382) exploit which is a DLL Hijacking vulnerability in which we can inject a payload to perform privilege escalation. This exploit works on version 1.42
 

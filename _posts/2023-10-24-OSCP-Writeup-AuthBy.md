@@ -2,6 +2,7 @@
 layout: post
 title: PG | AuthBy
 subtitle: Enumeratation and pillaging like bandits in the old country.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results

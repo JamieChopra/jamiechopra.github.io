@@ -2,6 +2,7 @@
 layout: post
 title: PG | Nibbles
 subtitle: This machine will highlight why we have hardening guidelines.
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results

@@ -2,6 +2,7 @@
 layout: post
 title: PG | Hetemit
 subtitle: Hetemit - The Goddess of Destruction
+thumbnail-img: /assets/img/OffSec.png
 ---
 
 # Nmap Scan Results
