@@ -32,7 +32,7 @@ subtitle: CCNA
 ![IPv6SLAAC](/assets/img/Network/IPv6-SLAAC.png)
 
 ## Standard Access Control Lists (ACL)
-![SACL](/assets/img/Network/SACL.png)
+![ACL](/assets/img/Network/ACL.png)
 
 ## Extended Access Control Lists (ACL)
 ![EACL](/assets/img/Network/EACL.png)
