@@ -7,6 +7,7 @@ cover-img: /assets/img/UniversityBookshelf.jpg
 ## Year 1
 
 **CO450-20S1 Computer Architectures-20S1**
+
 This module gave me a deep insight to the fundamentals of computer components including:
 - The Central Processing Unit (CPU)
 - Binary, octal, decimal and hexadecimal conversions
@@ -14,6 +15,7 @@ This module gave me a deep insight to the fundamentals of computer components in
 - Logic Circuits
 
 **CO452-20S1 Programming Concepts-20S1**
+
 This module covered Java object oriented programming in which I created a series of applications and learnt:
 - Objects, Classes, Methods, Parameters, Data Types, Variables and Instances
 - Java Libraries
@@ -23,6 +25,7 @@ This module covered Java object oriented programming in which I created a series
 - Avoiding Code Duplication
 
 **CO454-20S1 Digital Technologies And Professional Practice-20S1**
+
 This module taught me communication skills and professional practice by providing me the tools to construct reports, presentations and documentation that can be presented to both C-Suite level executives and to colleagues while` adjusting the technical language to suit the environment.
 
 **CO456-20S1 Web Development-20S1**
