@@ -21,7 +21,8 @@ author: Some Person
 
 navbar-links:
   OSCP: "OSCP"
-  University: "aboutme"
+  Networking: "Networking"
+  University: "University"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
