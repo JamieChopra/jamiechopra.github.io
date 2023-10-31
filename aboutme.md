@@ -4,9 +4,6 @@ title: Buckinghamshire New University
 subtitle: BSc Hons Cyber Security
 cover-img: /assets/img/UniversityBookshelf.jpg
 ---
-
-This page is a collection of the modules I took at University
-
 ## Year 1
 
 **CO450-20S1 Computer Architectures-20S1**
