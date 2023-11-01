@@ -16,7 +16,7 @@ This module gave me a deep insight to the fundamentals of computer components in
 
 **CO452-20S1 Programming Concepts-20S1**
 
-This module covered Java object oriented programming in which I created a series of applications and learnt:
+Java object oriented programming
 - Objects, Classes, Methods, Parameters, Data Types, Variables and Instances
 - Java Libraries
 - Code Refactoring
@@ -34,12 +34,31 @@ This module taught me communication skills and professional practice by providin
 - JavaScript
 
 **CO403-20S2 Secure Systems-20S2**
+- Developed mock IT security policies for organizations
+- Learnt the fundamentals of Confidentiality, Integrity and Availability (CIA)
+- Learnt Risk Management frameworks including: ISO27001, NIST 800-53 and COBIT
+- Learnt PCI DSS compliancy requirements
+- Developed Business Continuity Plans (BCPs) and Disaster Recovery Plans (DCPs)
+
 
 **CO404-20S2 Cyber Threat And Risk Management-20S2**
+- Planning, scheduling and documenting Risk Management Plans
+- Assigning responsibilities in Risk Management Plans
+- Identifying assets, threats and vulnerabilities
+- Implementing procedural, technical and physical security controls
 
 **CO451-20S2 Networking-20S2**
+- Configuring LANs and WANs
+- Segmenting networks through subnets, VLANS and VLSM
+- Protocol Configuration including SSH, NTP, SNMP, FTP, DNS, DHCP, EIGRP and OSPF
+- Access Control List configuration
+
 
 **CO453-20S2 Application Programming-20S2**
+This module introduced me to C# programming:
+- Classes, Objects, Attributes, Methods, Input, Output, Arithmetic, Data Types
+- Principles, Pair Programming, Refactoring, if..else, Switch, Constants, DRY, Black Box Testing, Data Validation, Enumerations
+- Integrating C# application into web interface via ASP.NET Core MVC
 
 ## Year 2
 
