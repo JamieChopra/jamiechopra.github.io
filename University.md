@@ -132,16 +132,17 @@ https://github.com/JamieChopra/Diet-App.appstudio
 - Conducting IEEE 829 compliant incident reports
 
 **CO655-22S2 Network Security-22S2**
+
 I created two simulated secure network topologies implementing a series of security configurations:    
 
-CW1 
+Topology 1
 - Firewall Configuration
 - Access Control List Configuration
 - Securing internal HTTP Web Server
 - SSH Configuration
 - DNS Server Configuration
 
-CW2
+Topology 2
 - DHCP Pool Configuration
 - DMZ Configuration
 - Network Address Translation (NAT)
