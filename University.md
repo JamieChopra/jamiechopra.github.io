@@ -96,18 +96,36 @@ https://github.com/JamieChopra/Diet-App.appstudio
 - GET and POST forms
 
 **CO557-21S2 Software Engineering-21S2**
+- 
 
 **CO559-21S2 Introduction To Intelligent Systems (Team Project)-21S2**
+- Investigating Neural Networks
+- Convolutional Neural Networks
+- Recurrent Neural Networks
+- Automatic Speech Recognition AI
 
 ## Year 3
 
 **CO652-22S1 Knowledge-Based Systems In Artificial Intelligence-22S1**
+- Knowledge Representation Techniques (Logic, Semantic Networks, Production Rules and Frames)
+- Breadth First Search (BFS) and Depth First Search (DFS)
+- Heuristic Search Techniques including Means-End Analysis and Best First Search algorithms
+- Created 
 
-**CO654-22S1 Cloud Computing-22S1**
+**CO654-22S1 Cloud Computing-22S1 (AWS)**
+- Created a Amazon Virtual Private Cloud (VPC)
+- Set up EC2 instances, S3 Bucket storage
+- Implemented Identity Access Management and Access Control Lists
+- Connected AWS CloudTrail to an Amazon S3 Bucket to store logs
 
 **CO669-22S1 Security Auditing And Response-22S1**
+- IT security Policies, Standards, Procedures, and Guidelines
+- Security compliancy in the User Domain, Workstation Domain, LAN Domain, WAN Domain, Remote Access Domain and Application Domain
+- Deep dive into IT Security Auditing Frameworks including ISO 27001 (14 Domains and 114 Controls), NIST 800-53 (20 Control Families)
+- Learnt to prepare, conduct and document an IT Security Audit
 
 **CO651-22S2 Quality Assurance And Testing-22S2**
+
 
 **CO655-22S2 Network Security-22S2**
 
