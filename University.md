@@ -16,7 +16,7 @@ This module gave me a deep insight to the fundamentals of computer components in
 
 **CO452-20S1 Programming Concepts-20S1**
 
-Java object oriented programming
+Java Object Oriented Programming (OOP)
 - Objects, Classes, Methods, Parameters, Data Types, Variables and Instances
 - Java Libraries
 - Code Refactoring
@@ -50,7 +50,7 @@ This module taught me communication skills and professional practice by providin
 **CO451-20S2 Networking-20S2**
 - Configuring LANs and WANs
 - Segmenting networks through subnets, VLANS and VLSM
-- Protocol Configuration including SSH, NTP, SNMP, FTP, DNS, DHCP, EIGRP and OSPF
+- Protocol Configuration including SSH, NTP, SNMP, FTP, DNS, DHCP, EIGRP & OSPF
 - Access Control List configuration
 
 
@@ -77,8 +77,8 @@ This module introduced me to C# programming: https://github.com/JamieChopra/Cons
 
 **CO556-21S1 Network Systems-21S1**
 - Static and Default Routes
-- DTP, Inter-Vlan Routing, STP, EtherChannels and FHRP (Redundancy)
-
+- DTP, Inter-Vlan Routing, STP
+- Network Redundancy via EtherChannels and FHRP (HSRP)
 
 **CO558-21S1 Database Design-21S1**
 - SQL Relational Database Management Systems (RBMS)
@@ -96,7 +96,7 @@ https://github.com/JamieChopra/Diet-App.appstudio
 - GET and POST forms
 
 **CO557-21S2 Software Engineering-21S2**
-- 
+
 
 **CO559-21S2 Introduction To Intelligent Systems (Team Project)-21S2**
 - Investigating Neural Networks
@@ -125,10 +125,26 @@ https://github.com/JamieChopra/Diet-App.appstudio
 - Learnt to prepare, conduct and document an IT Security Audit
 
 **CO651-22S2 Quality Assurance And Testing-22S2**
-
+- Understanding of Software Development Methods including Agile (Scrum), Waterfall, V Model and Spiral Life Cycle
+- Performing static testing including formal documented inspections
+- Whitebox and blackbox testing to discover defects
+- Studied a series of Test Design Techniques including Equivilance Partitioning (EP), Boundary Value Analysis (BVA), Decision Table Testing (DTT) & State Transition Testing (STT)
+- Conducting IEEE 829 compliant incident reports
 
 **CO655-22S2 Network Security-22S2**
+I created two simulated secure network topologies implementing a series of security configurations:    
+CW1 
+- Firewall Configuration
+- Access Control List Configuration
+- Securing internal HTTP Web Server
+- SSH Configuration
+- DNS Server Configuration
+CW2
+- DHCP Pool Configuration
+- DMZ Configuration
+- Network Address Translation (NAT)
 
 **CO670-22S2 Secure Business Management-22S2**
+
 
 **CO671-22SB Cyber Security Project-22SB**
