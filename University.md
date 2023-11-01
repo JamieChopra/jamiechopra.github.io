@@ -26,7 +26,7 @@ Java object oriented programming
 
 **CO454-20S1 Digital Technologies And Professional Practice-20S1**
 
-This module taught me communication skills and professional practice by providing me the tools to construct reports, presentations and documentation that can be presented to both C-Suite level executives and to colleagues while` adjusting the technical language to suit the environment.
+This module taught me communication skills and professional practice by providing me the tools to construct reports, presentations and documentation that can be presented to both C-Suite level executives and to colleagues while adjusting the technical language to suit the environment.
 
 **CO456-20S1 Web Development-20S1**
 - HTML
@@ -55,7 +55,8 @@ This module taught me communication skills and professional practice by providin
 
 
 **CO453-20S2 Application Programming-20S2**
-This module introduced me to C# programming:
+
+This module introduced me to C# programming: https://github.com/JamieChopra/ConsoleApps15/wiki
 - Classes, Objects, Attributes, Methods, Input, Output, Arithmetic, Data Types
 - Principles, Pair Programming, Refactoring, if..else, Switch, Constants, DRY, Black Box Testing, Data Validation, Enumerations
 - Integrating C# application into web interface via ASP.NET Core MVC
@@ -63,16 +64,36 @@ This module introduced me to C# programming:
 ## Year 2
 
 **CO506-21S1 Information Security-21S1**
+- Access Control Systems & the Principle of Least Privilege (Windows)
+- Creating Risk and Attack Matrices
+- Learnt security flaw patching processes
+- Multifactor Authentication & Password Policies
+- Device and File Encryption
 
 **CO507-21S1 Cyber Security Management-21S1**
+- Digital Forensics
+- Recovering Deleted Data
+- Network Traffic Analysis (Wireshark)
 
 **CO556-21S1 Network Systems-21S1**
+- Static and Default Routes
+- DTP, Inter-Vlan Routing, STP, EtherChannels and FHRP (Redundancy)
+
 
 **CO558-21S1 Database Design-21S1**
+- SQL Relational Database Management Systems (RBMS)
+- SQL Queries
+- SQL entities, relationships, and attributes.
+- Primary Keys and Foreign Keys
 
 **CO508-21S2 Mobile Systems Security-21S2**
+https://github.com/JamieChopra/Diet-App.appstudio
+- Developed a Mobile Application using JavaScript and JSON
 
 **CO551-21S2 Open Source Systems-21S2**
+- PHP Web Application development with MySQL backend
+- Development environment included: XAMPP, VS Code, GitHub and WinSCP
+- GET and POST forms
 
 **CO557-21S2 Software Engineering-21S2**
 
