@@ -3,8 +3,6 @@ layout: page
 title: Buckinghamshire New University
 subtitle: BSc (Hons) Cyber Security
 cover-img: /assets/img/UniversityBookshelves.png
-gh-repo: JamieChopra/BlueJ-PartA/wiki
-gh-badge: [star, fork, follow]
 ---
 ## Year 1
 
@@ -18,7 +16,9 @@ This module gave me a deep insight to the fundamentals of computer components:
 
 **CO452-20S1 Programming Concepts-20S1**
 
-Java Object Oriented Programming (OOP) https://github.com/JamieChopra/BlueJ-PartA/wiki#java-object-oriented-programming-oop-by-jamie-chopra
+Java Object Oriented Programming (OOP) 
+[https://github.com/JamieChopra/BlueJ-PartA/wiki](https://github.com/JamieChopra/BlueJ-PartA/wiki)
+https://github.com/JamieChopra/BlueJ-PartA/wiki#java-object-oriented-programming-oop-by-jamie-chopra
 - My [final project](https://github.com/JamieChopra/App06-Zuul2/wiki/App06:-Zuul-Game) for this module was an interactive command-line based game
 - Objects, Classes, Methods, Parameters, Data Types, Variables and Instances
 - Java Libraries
