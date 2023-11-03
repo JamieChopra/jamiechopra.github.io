@@ -2,7 +2,7 @@
 layout: page
 title: Buckinghamshire New University
 subtitle: BSc Hons Cyber Security
-cover-img: /assets/img/UniversityBookshelf.jpg
+cover-img: /assets/img/UniversityBookshelves.png
 ---
 ## Year 1
 
@@ -16,7 +16,8 @@ This module gave me a deep insight to the fundamentals of computer components in
 
 **CO452-20S1 Programming Concepts-20S1**
 
-Java Object Oriented Programming (OOP)
+Java Object Oriented Programming (OOP) https://github.com/JamieChopra/BlueJ-PartA/wiki#java-object-oriented-programming-oop-by-jamie-chopra
+My [final project](https://github.com/JamieChopra/App06-Zuul2/wiki/App06:-Zuul-Game) for this module was an interactive command-line based game
 - Objects, Classes, Methods, Parameters, Data Types, Variables and Instances
 - Java Libraries
 - Code Refactoring
@@ -55,7 +56,6 @@ This module taught me communication skills and professional practice by providin
 
 
 **CO453-20S2 Application Programming-20S2**
-
 This module introduced me to C# programming: https://github.com/JamieChopra/ConsoleApps15/wiki
 - Classes, Objects, Attributes, Methods, Input, Output, Arithmetic, Data Types
 - Principles, Pair Programming, Refactoring, if..else, Switch, Constants, DRY, Black Box Testing, Data Validation, Enumerations
@@ -87,16 +87,19 @@ This module introduced me to C# programming: https://github.com/JamieChopra/Cons
 - Primary Keys and Foreign Keys
 
 **CO508-21S2 Mobile Systems Security-21S2**
-https://github.com/JamieChopra/Diet-App.appstudio
+https://github.com/JamieChopra/Diet-App.appstudio/wiki
 - Developed a Mobile Application using JavaScript and JSON
 
 **CO551-21S2 Open Source Systems-21S2**
+https://github.com/JamieChopra/Open-Source-Systems-21S2
 - PHP Web Application development with MySQL backend
 - Development environment included: XAMPP, VS Code, GitHub and WinSCP
 - GET and POST forms
 
 **CO557-21S2 Software Engineering-21S2**
-
+https://github.com/JamieChopra/Software-Engineering-21S2/wiki
+- Developed Fire and Security Alarm Monitoring System
+- Ada (Object Oriented Programming)
 
 **CO559-21S2 Introduction To Intelligent Systems (Team Project)-21S2**
 - Investigating Neural Networks
