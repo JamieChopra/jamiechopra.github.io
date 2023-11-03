@@ -2,6 +2,7 @@
 layout: page
 title: Networking
 subtitle: CCNA
+cover-img: /assets/img/Network/NetworkingBanner.png
 ---
 
 ## Router-on-a-stick
