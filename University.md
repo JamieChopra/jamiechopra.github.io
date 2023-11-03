@@ -1,23 +1,25 @@
 ---
 layout: page
 title: Buckinghamshire New University
-subtitle: BSc Hons Cyber Security
+subtitle: BSc (Hons) Cyber Security
 cover-img: /assets/img/UniversityBookshelves.png
+gh-repo: JamieChopra/BlueJ-PartA/wiki
+gh-badge: [star, fork, follow]
 ---
 ## Year 1
 
 **CO450-20S1 Computer Architectures-20S1**
 
-This module gave me a deep insight to the fundamentals of computer components including:
+This module gave me a deep insight to the fundamentals of computer components:
 - The Central Processing Unit (CPU)
-- Binary, octal, decimal and hexadecimal conversions
-- Boolean logic and Boolean algebra
+- Binary, Octal, Decimal and Hexadecimal conversions
+- Boolean Logic and Boolean Algebra
 - Logic Circuits
 
 **CO452-20S1 Programming Concepts-20S1**
 
 Java Object Oriented Programming (OOP) https://github.com/JamieChopra/BlueJ-PartA/wiki#java-object-oriented-programming-oop-by-jamie-chopra
-My [final project](https://github.com/JamieChopra/App06-Zuul2/wiki/App06:-Zuul-Game) for this module was an interactive command-line based game
+- My [final project](https://github.com/JamieChopra/App06-Zuul2/wiki/App06:-Zuul-Game) for this module was an interactive command-line based game
 - Objects, Classes, Methods, Parameters, Data Types, Variables and Instances
 - Java Libraries
 - Code Refactoring
