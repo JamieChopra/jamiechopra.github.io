@@ -16,9 +16,11 @@ This module gave me a deep insight to the fundamentals of computer components:
 
 **CO452-20S1 Programming Concepts-20S1**
 
-Java Object Oriented Programming (OOP) 
 [https://github.com/JamieChopra/BlueJ-PartA/wiki](https://github.com/JamieChopra/BlueJ-PartA/wiki)
-- My [final project](https://github.com/JamieChopra/App06-Zuul2/wiki/App06:-Zuul-Game) for this module was an interactive command-line based game
+
+Java Object Oriented Programming (OOP) 
+
+My [final project](https://github.com/JamieChopra/App06-Zuul2/wiki/App06:-Zuul-Game) for this module was an interactive command-line based game
 - Objects, Classes, Methods, Parameters, Data Types, Variables and Instances
 - Java Libraries
 - Code Refactoring
@@ -36,31 +38,32 @@ This module taught me communication skills and professional practice by providin
 - JavaScript
 
 **CO403-20S2 Secure Systems-20S2**
-- Developed mock IT security policies for organizations
+- Developed mock IT Security Policies for organizations
 - Learnt the fundamentals of Confidentiality, Integrity and Availability (CIA)
-- Learnt Risk Management frameworks including: ISO27001, NIST 800-53 and COBIT
+- Learnt Risk Management Frameworks (RMF) including: ISO27001, NIST 800-53 and COBIT
 - Learnt PCI DSS compliancy requirements
 - Developed Business Continuity Plans (BCPs) and Disaster Recovery Plans (DCPs)
 
 
 **CO404-20S2 Cyber Threat And Risk Management-20S2**
-- Planning, scheduling and documenting Risk Management Plans
+- Planning, Scheduling and Documenting Risk Management Plans
 - Assigning responsibilities in Risk Management Plans
-- Identifying assets, threats and vulnerabilities
-- Implementing procedural, technical and physical security controls
+- Identifying Assets, Threats and Vulnerabilities
+- Implementing Procedural, Technical and Physical security controls
 
 **CO451-20S2 Networking-20S2**
 - Configuring LANs and WANs
-- Segmenting networks through subnets, VLANS and VLSM
-- Protocol Configuration including SSH, NTP, SNMP, FTP, DNS, DHCP, EIGRP & OSPF
+- Segmenting networks through Subnets, VLANS and VLSM
+- Protocol configuration including SSH, NTP, SNMP, FTP, DNS, DHCP, EIGRP & OSPF
 - Access Control List configuration
 
 
 **CO453-20S2 Application Programming-20S2**
-This module introduced me to C# programming: 
+
 [https://github.com/JamieChopra/ConsoleApps15/wiki](https://github.com/JamieChopra/ConsoleApps15/wiki)
-- Classes, Objects, Attributes, Methods, Input, Output, Arithmetic, Data Types
-- Principles, Pair Programming, Refactoring, if..else, Switch, Constants, DRY, Black Box Testing, Data Validation, Enumerations
+
+This module introduced me to C# programming: 
+- Classes, Objects, Attributes, Methods, Input, Output, Arithmetic, Data Types, Principles, Pair Programming, Refactoring, if..else, Switch, Constants, DRY, Black Box Testing, Data Validation, Enumerations
 - Integrating C# application into web interface via ASP.NET Core MVC
 
 ## Year 2
@@ -89,16 +92,19 @@ This module introduced me to C# programming:
 - Primary Keys and Foreign Keys
 
 **CO508-21S2 Mobile Systems Security-21S2**
+
 [https://github.com/JamieChopra/Diet-App.appstudio/wiki](https://github.com/JamieChopra/Diet-App.appstudio/wiki)
 - Developed a Mobile Application using JavaScript and JSON
 
 **CO551-21S2 Open Source Systems-21S2**
+
 [https://github.com/JamieChopra/Open-Source-Systems-21S2](https://github.com/JamieChopra/Open-Source-Systems-21S2)
 - PHP Web Application development with MySQL backend
 - Development environment included: XAMPP, VS Code, GitHub and WinSCP
 - GET and POST forms
 
 **CO557-21S2 Software Engineering-21S2**
+
 [https://github.com/JamieChopra/Software-Engineering-21S2/wiki](https://github.com/JamieChopra/Software-Engineering-21S2/wiki)
 - Developed Fire and Security Alarm Monitoring System
 - Ada (Object Oriented Programming)
