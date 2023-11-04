@@ -186,7 +186,11 @@ During this module I investigated and learnt the structure of Neural Networks
 </a>
 
 This module introduced me to the Prolog logic-based Programming Language
-- Knowledge Representation Techniques (Logic, Semantic Networks, Production Rules and Frames)
+- Knowledge Representation Techniques
+  - Logic Representation
+  - Semantic Networks
+  - Production Rules
+  - Frame Representation
 - Breadth First Search (BFS) and Depth First Search (DFS)
 - Heuristic Search Techniques including Means-End Analysis and Best First Search Algorithms
 
