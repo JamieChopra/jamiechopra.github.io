@@ -26,7 +26,8 @@ This module gave me a deep insight to the fundamentals of computer components:
   </button>
 </a>
 
-My [final project](https://github.com/JamieChopra/App06-Zuul2/wiki/App06:-Zuul-Game) for this module was an interactive command-line based game
+This module introduced me to Java Object Oriented Programming (OOP)
+- My [final project](https://github.com/JamieChopra/App06-Zuul2/wiki/App06:-Zuul-Game) for this module was an interactive command-line based game
 - Objects, Classes, Methods, Parameters, Data Types, Variables and Instances
 - Java Libraries
 - Code Refactoring
@@ -83,7 +84,7 @@ This module taught me communication skills and professional practice by providin
   </button>
 </a>
 
-This module introduced me to C# programming: 
+This module introduced me to C# programming
 - Classes, Objects, Attributes, Methods, Input, Output, Arithmetic, Data Types, Principles, Pair Programming, Refactoring, if..else, Switch, Constants, DRY, Black Box Testing, Data Validation, Enumerations
 - Integrating C# application into web interface via ASP.NET Core MVC
 
@@ -116,6 +117,7 @@ This module introduced me to C# programming:
 <br>
 
 ### CO558-21S1 Database Design
+This module introduced me to SQL
 - SQL Relational Database Management Systems (RBMS)
 - SQL Queries
 - SQL entities, relationships, and attributes.
@@ -131,6 +133,7 @@ This module introduced me to C# programming:
     Mobile Systems Security-21S2
   </button>
 </a>
+This module introduced me to JavaScript and JSON Programming Languages
 - Developed a Mobile Application using JavaScript and JSON
 
 <br>
@@ -143,6 +146,7 @@ This module introduced me to C# programming:
     Open Source Systems-21S2
   </button>
 </a>
+This module introduced me to PHP and strengthened my knowledge of SQL
 - PHP Web Application development with MySQL backend
 - Development environment included: XAMPP, VS Code, GitHub and WinSCP
 - GET and POST forms
@@ -157,12 +161,12 @@ This module introduced me to C# programming:
     Software Engineering-21S2
   </button>
 </a>
-- Developed Fire and Security Alarm Monitoring System
+- Developed Fire and Security Alarm Monitoring System and documented the Agile development process
 
 <br>
 
 ### CO559-21S2 Introduction To Intelligent Systems
-- Investigating Neural Networks
+During this module I investigated and learnt the structure of Neural Networks
 - Convolutional Neural Networks
 - Recurrent Neural Networks
 - Automatic Speech Recognition AI
@@ -173,10 +177,17 @@ This module introduced me to C# programming:
 <br>
 
 ### CO652-22S1 Knowledge-Based Systems In Artificial Intelligence
+<a href="https://github.com/JamieChopra/Knowledge-Based-Systems---CW1" target="_blank">
+  <button style="background-color: #fff; color: #000; padding: 5px 10px; border: 1px solid #000; border-radius: 10px; cursor: pointer;">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 30px; height: 30px; margin-right: 5px;">
+    Knowledge-Based Systems In Artificial Intelligence-22S1
+  </button>
+</a>
+
+This module introduced me to the Prolog logic-based Programming Language
 - Knowledge Representation Techniques (Logic, Semantic Networks, Production Rules and Frames)
 - Breadth First Search (BFS) and Depth First Search (DFS)
 - Heuristic Search Techniques including Means-End Analysis and Best First Search Algorithms
-- Created 
 
 <br>
 
@@ -207,16 +218,16 @@ This module introduced me to C# programming:
 
 ### CO655-22S2 Network Security
 
-I created two simulated secure network topologies implementing a series of security configurations:    
+This module consisted of configuring protocols for Network Security by creating and configuring two simulated secure network topologies implementing a series of security configurations    
 
-Topology 1
+Topology 1 included:
 - Firewall Configuration
 - Access Control List Configuration
 - Securing internal HTTP Web Server
 - SSH Configuration
 - DNS Server Configuration
 
-Topology 2
+Topology 2 included:
 - DHCP Pool Configuration
 - DMZ Configuration
 - Network Address Translation (NAT)
