@@ -15,8 +15,9 @@ This module gave me a deep insight to the fundamentals of computer components:
 - Logic Circuits
 
 **CO452-20S1 Programming Concepts-20S1**
+
 <a href="https://github.com/JamieChopra/BlueJ-PartA/wiki" target="_blank">
-  <button style="background-color: #fff; color: #000; padding: 10px 20px; border: 2px solid #000; border-radius: 30px; cursor: pointer;">
+  <button style="background-color: #fff; color: #000; padding: 10px 20px; border: 2px solid #000; border-radius: 10px; cursor: pointer;">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 40px; height: 40px; margin-right: 10px;">
     Programming Concepts-20S1
   </button>
@@ -63,8 +64,9 @@ This module taught me communication skills and professional practice by providin
 
 
 **CO453-20S2 Application Programming-20S2**
+
 <a href="https://github.com/JamieChopra/ConsoleApps15/wiki" target="_blank">
-  <button style="background-color: #fff; color: #000; padding: 10px 20px; border: 2px solid #000; border-radius: 30px; cursor: pointer;">
+  <button style="background-color: #fff; color: #000; padding: 10px 20px; border: 2px solid #000; border-radius: 10px; cursor: pointer;">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 40px; height: 40px; margin-right: 10px;">
     Application Programming-20S2
   </button>
@@ -100,8 +102,9 @@ This module introduced me to C# programming:
 - Primary Keys and Foreign Keys
 
 **CO508-21S2 Mobile Systems Security-21S2**
+
 <a href="https://github.com/JamieChopra/Diet-App.appstudio/wiki" target="_blank">
-  <button style="background-color: #fff; color: #000; padding: 10px 20px; border: 2px solid #000; border-radius: 30px; cursor: pointer;">
+  <button style="background-color: #fff; color: #000; padding: 10px 20px; border: 2px solid #000; border-radius: 10px; cursor: pointer;">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 40px; height: 40px; margin-right: 10px;">
     Mobile Systems Security-21S2
   </button>
@@ -109,8 +112,9 @@ This module introduced me to C# programming:
 - Developed a Mobile Application using JavaScript and JSON
 
 **CO551-21S2 Open Source Systems-21S2**
+
 <a href="https://github.com/JamieChopra/Open-Source-Systems-21S2/wiki" target="_blank">
-  <button style="background-color: #fff; color: #000; padding: 10px 20px; border: 2px solid #000; border-radius: 30px; cursor: pointer;">
+  <button style="background-color: #fff; color: #000; padding: 10px 20px; border: 2px solid #000; border-radius: 10px; cursor: pointer;">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 40px; height: 40px; margin-right: 10px;">
     Open Source Systems-21S2
   </button>
@@ -120,9 +124,10 @@ This module introduced me to C# programming:
 - GET and POST forms
 
 **CO557-21S2 Software Engineering-21S2**
+
 <a href="https://github.com/JamieChopra/Software-Engineering-21S2/wiki" target="_blank">
-  <button style="background-color: #fff; color: #000; padding: 10px 20px; border: 2px solid #000; border-radius: 30px; cursor: pointer;">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 40px; height: 40px; margin-right: 10px;">
+  <button style="background-color: #fff; color: #000; padding: 5px 10px; border: 2px solid #000; border-radius: 10px; cursor: pointer;">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 20px; height: 20px; margin-right: 5px;">
     Software Engineering-21S2
   </button>
 </a>
@@ -184,7 +189,7 @@ Topology 2
 **CO671-22SB Cyber Security Project-22SB**
 
 <a href="https://github.com/yourusername/yourrepository" target="_blank">
-  <button style="background-color: #fff; color: #000; padding: 10px 20px; border: 2px solid #000; border-radius: 30px; cursor: pointer;">
+  <button style="background-color: #fff; color: #000; padding: 10px 20px; border: 2px solid #000; border-radius: 10px; cursor: pointer;">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 40px; height: 40px; margin-right: 10px;">
     Open Source Systems-21S2
   </button>
