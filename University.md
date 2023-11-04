@@ -159,7 +159,8 @@ Topology 2
 **CO671-22SB Cyber Security Project-22SB**
 
 <a href="https://github.com/yourusername/yourrepository" target="_blank">
-  <button style="background-color: #6e5494; color: #fff; padding: 10px 20px; border: none; cursor: pointer;">
+  <button style="background-color: #4e97e0; color: #fff; padding: 10px 20px; border: none; cursor: pointer;">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 20px; height: 20px; margin-right: 10px;">
     Connect to GitHub to update
   </button>
 </a>
