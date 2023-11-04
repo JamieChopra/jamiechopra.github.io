@@ -5,6 +5,7 @@ subtitle: BSc (Hons) Cyber Security
 cover-img: /assets/img/UniversityBookshelves.png
 ---
 # Year 1
+<br>
 
 ### CO450-20S1 Computer Architectures
 
@@ -89,6 +90,7 @@ This module introduced me to C# programming:
 <br>
 
 # Year 2
+<br>
 
 ### CO506-21S1 Information Security
 - Access Control Systems & the Principle of Least Privilege (Windows)
@@ -168,6 +170,7 @@ This module introduced me to C# programming:
 <br>
 
 # Year 3
+<br>
 
 ### CO652-22S1 Knowledge-Based Systems In Artificial Intelligence
 - Knowledge Representation Techniques (Logic, Semantic Networks, Production Rules and Frames)
