@@ -1128,12 +1128,13 @@ pre {
 }
 
 .home-post-button {
-  background-color: #00b894;
+  background-color: #ffffff;
   color: #fff;
   text-align: center;
   text-decoration: none;
   padding: 20px;
   border-radius: 5px;
+  border: 1px solid #d3d3d3;
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s;
   display: flex;
@@ -1143,8 +1144,8 @@ pre {
 }
 
 .home-post-button img {
-  max-width: 100px;
-  max-height: 100px;
+  width: 600px;
+  height: 600px;
 }
 
 .home-post-button:hover .post-text {
