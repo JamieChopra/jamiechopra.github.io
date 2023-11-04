@@ -134,7 +134,7 @@ This module introduced me to SQL
   </button>
 </a>
 This module introduced me to JavaScript and JSON Programming Languages
-- Developed a Mobile Application using JavaScript and JSON
+- Developed a Mobile Application
 
 <br>
 
