@@ -127,7 +127,7 @@ This module introduced me to C# programming:
 
 <a href="https://github.com/JamieChopra/Software-Engineering-21S2/wiki" target="_blank">
   <button style="background-color: #fff; color: #000; padding: 5px 10px; border: 2px solid #000; border-radius: 10px; cursor: pointer;">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 20px; height: 20px; margin-right: 5px;">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 30px; height: 30px; margin-right: 5px;">
     Software Engineering-21S2
   </button>
 </a>
