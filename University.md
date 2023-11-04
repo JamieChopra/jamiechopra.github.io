@@ -214,7 +214,11 @@ This module introduced me to the Prolog logic-based Programming Language
 - Understanding of Software Development Methods including Agile (Scrum), Waterfall, V Model and Spiral Life Cycle
 - Performing static testing including formal documented inspections
 - Whitebox and blackbox testing to discover defects
-- Studied a series of Test Design Techniques including Equivilance Partitioning (EP), Boundary Value Analysis (BVA), Decision Table Testing (DTT) & State Transition Testing (STT)
+- Studied a series of Test Design Techniques including:
+  - Equivilance Partitioning (EP)
+  - Boundary Value Analysis (BVA)
+  - Decision Table Testing (DTT)
+  - State Transition Testing (STT)
 - Conducting IEEE 829 compliant incident reports
 
 <br>
