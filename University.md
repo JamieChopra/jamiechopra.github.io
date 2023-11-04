@@ -175,7 +175,7 @@ This module introduced me to C# programming:
 ### CO652-22S1 Knowledge-Based Systems In Artificial Intelligence
 - Knowledge Representation Techniques (Logic, Semantic Networks, Production Rules and Frames)
 - Breadth First Search (BFS) and Depth First Search (DFS)
-- Heuristic Search Techniques including Means-End Analysis and Best First Search algorithms
+- Heuristic Search Techniques including Means-End Analysis and Best First Search Algorithms
 - Created 
 
 <br>
@@ -228,10 +228,3 @@ Topology 2
 <br>
 
 ### CO671-22SB Cyber Security Project
-
-<a href="https://github.com/yourusername/yourrepository" target="_blank">
-  <button style="background-color: #fff; color: #000; padding: 10px 20px; border: 2px solid #000; border-radius: 10px; cursor: pointer;">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 40px; height: 40px; margin-right: 10px;">
-    Open Source Systems-21S2
-  </button>
-</a>
