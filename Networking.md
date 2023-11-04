@@ -80,3 +80,5 @@ cover-img: /assets/img/Network/NetworkingBanner.png
 ## Wireless LAN
 ![Wireless LAN](/assets/img/Network/WirelessLAN.png)
 
+## Wireless LAN
+[![Wireless LAN](/assets/img/Network/WirelessLAN.png)](https://github.com/JamieChopra/jamiechopra.github.io/blob/master/index.html)
