@@ -13,7 +13,7 @@
 title: JamieCySec
 
 # Your name to show in the footer
-author: Some Person
+author: Jamie Chopra
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -53,22 +53,22 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  github: https://github.com/JamieChopra
+  linkedin: https://www.linkedin.com/in/jamie-chopra-988837270/
+#  facebook:
+#  twitter:
+#  patreon:
+#  youtube:
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+#  linkedin:
 #  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
+#  stackoverflow:
+#  snapchat:
+#  instagram:
 #  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
+#  telephone:
+#  steam:
 #  twitch: yourname
 #  yelp: yourname
 #  telegram: yourname
@@ -92,10 +92,9 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
-  vk: false
+#  twitter: true
+#  facebook: true
+#  linkedin: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
@@ -254,7 +253,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Greenwich"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -294,6 +293,4 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
 
