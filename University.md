@@ -235,14 +235,14 @@ This module introduced me to the Prolog logic-based Programming Language
 
 This module consisted of configuring protocols for Network Security by creating and configuring two simulated secure network topologies implementing a series of security configurations    
 
-Topology 1 included:
+Topology 1 includes:
 - Firewall Configuration
 - Access Control List Configuration
 - Securing internal HTTP Web Server
 - SSH Configuration
 - DNS Server Configuration
 
-Topology 2 included:
+Topology 2 includes:
 - DHCP Pool Configuration
 - DMZ Configuration
 - Network Address Translation (NAT)
