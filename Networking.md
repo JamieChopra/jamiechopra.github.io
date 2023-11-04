@@ -77,3 +77,6 @@ cover-img: /assets/img/Network/NetworkingBanner.png
 ## Dynamic ARP Inpsection
 ![DynamicARPInspection](/assets/img/Network/DynamicARPInspection.png)
 
+## Wireless LAN
+![Wireless LAN](/assets/img/Network/WirelessLAN.png)
+
