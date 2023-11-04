@@ -1132,13 +1132,25 @@ pre {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  padding: 20px 30px;
+  padding: 20px;
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.home-post-button:hover {
+.home-post-button img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.home-post-text {
+  margin-top: 10px;
+}
+
+.-homepost-button:hover {
   background-color: #018d74;
   transform: scale(1.05);
 }
