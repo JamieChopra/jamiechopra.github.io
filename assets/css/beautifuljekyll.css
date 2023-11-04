@@ -1139,6 +1139,7 @@ pre {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px; /* Add gap between the image and text */
 }
 
 .home-post-button img {
@@ -1146,11 +1147,16 @@ pre {
   max-height: 100px;
 }
 
-.home-post-text {
-  margin-top: 10px;
+.home-post-button:hover .post-text {
+  opacity: 1; /* Show text when hovering over the image */
 }
 
-.-homepost-button:hover {
-  background-color: #018d74;
+.home-post-text {
+  margin-top: 10px;
+  opacity: 0; /* Initially hide text */
+}
+
+.home-post-button:hover {
+  background-color: #ffffff;
   transform: scale(1.05);
 }
