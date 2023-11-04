@@ -16,12 +16,12 @@ This module gave me a deep insight to the fundamentals of computer components:
 - Logic Circuits
 
 
-### CO452-20S1 Programming Concepts
+### CO452-20S1 Programming Concepts (Java)
 
 <a href="https://github.com/JamieChopra/BlueJ-PartA/wiki" target="_blank">
   <button style="background-color: #fff; color: #000; padding: 5px 10px; border: 1px solid #000; border-radius: 10px; cursor: pointer;">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 30px; height: 30px; margin-right: 5px;">
-    Programming Concepts-20S1 (Java)
+    Programming Concepts-20S1
   </button>
 </a>
 
@@ -67,12 +67,12 @@ This module taught me communication skills and professional practice by providin
 - Access Control List configuration
 
 
-### CO453-20S2 Application Programming
+### CO453-20S2 Application Programming (C#)
 
 <a href="https://github.com/JamieChopra/ConsoleApps15/wiki" target="_blank">
   <button style="background-color: #fff; color: #000; padding: 5px 10px; border: 1px solid #000; border-radius: 10px; cursor: pointer;">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 30px; height: 30px; margin-right: 5px;">
-    Application Programming-20S2 (C#)
+    Application Programming-20S2
   </button>
 </a>
 
@@ -111,23 +111,23 @@ This module introduced me to C# programming:
 - Primary Keys and Foreign Keys
 
 
-### CO508-21S2 Mobile Systems Security
+### CO508-21S2 Mobile Systems Security (JavaScript, JSON)
 
 <a href="https://github.com/JamieChopra/Diet-App.appstudio/wiki" target="_blank">
   <button style="background-color: #fff; color: #000; padding: 5px 10px; border: 1px solid #000; border-radius: 10px; cursor: pointer;">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 30px; height: 30px; margin-right: 5px;">
-    Mobile Systems Security-21S2 (JavaScript, JSON)
+    Mobile Systems Security-21S2
   </button>
 </a>
 - Developed a Mobile Application using JavaScript and JSON
 
 
-### CO551-21S2 Open Source Systems
+### CO551-21S2 Open Source Systems (PHP, MySQL)
 
 <a href="https://github.com/JamieChopra/Open-Source-Systems-21S2/wiki" target="_blank">
   <button style="background-color: #fff; color: #000; padding: 5px 10px; border: 1px solid #000; border-radius: 10px; cursor: pointer;">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 30px; height: 30px; margin-right: 5px;">
-    Open Source Systems-21S2 (PHP, MySQL)
+    Open Source Systems-21S2
   </button>
 </a>
 - PHP Web Application development with MySQL backend
@@ -135,12 +135,12 @@ This module introduced me to C# programming:
 - GET and POST forms
 
 
-### CO557-21S2 Software Engineering
+### CO557-21S2 Software Engineering (Ada)
 
 <a href="https://github.com/JamieChopra/Software-Engineering-21S2/wiki" target="_blank">
   <button style="background-color: #fff; color: #000; padding: 5px 10px; border: 1px solid #000; border-radius: 10px; cursor: pointer;">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 30px; height: 30px; margin-right: 5px;">
-    Software Engineering-21S2 (Ada)
+    Software Engineering-21S2
   </button>
 </a>
 - Developed Fire and Security Alarm Monitoring System
