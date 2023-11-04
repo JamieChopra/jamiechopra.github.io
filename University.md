@@ -160,7 +160,7 @@ Topology 2
 
 <a href="https://github.com/yourusername/yourrepository" target="_blank">
   <button style="background-color: #4e97e0; color: #fff; padding: 10px 20px; border: none; cursor: pointer;">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 20px; height: 20px; margin-right: 10px;">
-    Connect to GitHub to update
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 40px; height: 40px; margin-right: 10px;">
+    Open Source Systems-21S2
   </button>
 </a>
