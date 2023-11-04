@@ -4,7 +4,7 @@ title: Buckinghamshire New University
 subtitle: BSc (Hons) Cyber Security
 cover-img: /assets/img/UniversityBookshelves.png
 ---
-## Year 1
+# Year 1
 
 **CO450-20S1 Computer Architectures-20S1**
 
@@ -14,7 +14,7 @@ This module gave me a deep insight to the fundamentals of computer components:
 - Boolean Logic and Boolean Algebra
 - Logic Circuits
 
-**CO452-20S1 Programming Concepts-20S1**
+## CO452-20S1 Programming Concepts-20S1**
 
 <a href="https://github.com/JamieChopra/BlueJ-PartA/wiki" target="_blank">
   <button style="background-color: #fff; color: #000; padding: 5px 10px; border: 1px solid #000; border-radius: 10px; cursor: pointer;">
