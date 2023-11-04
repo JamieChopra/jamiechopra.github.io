@@ -15,7 +15,6 @@ This module gave me a deep insight to the fundamentals of computer components:
 - Logic Circuits
 
 **CO452-20S1 Programming Concepts-20S1**
-{: .box-note}
 [https://github.com/JamieChopra/BlueJ-PartA/wiki](https://github.com/JamieChopra/BlueJ-PartA/wiki)
 
 Java Object Oriented Programming (OOP) 
@@ -59,7 +58,6 @@ This module taught me communication skills and professional practice by providin
 
 
 **CO453-20S2 Application Programming-20S2**
-{: .box-note}
 [https://github.com/JamieChopra/ConsoleApps15/wiki](https://github.com/JamieChopra/ConsoleApps15/wiki)
 
 This module introduced me to C# programming: 
@@ -92,19 +90,16 @@ This module introduced me to C# programming:
 - Primary Keys and Foreign Keys
 
 **CO508-21S2 Mobile Systems Security-21S2**
-{: .box-note}
 [https://github.com/JamieChopra/Diet-App.appstudio/wiki](https://github.com/JamieChopra/Diet-App.appstudio/wiki)
 - Developed a Mobile Application using JavaScript and JSON
 
 **CO551-21S2 Open Source Systems-21S2**
-{: .box-note}
 [https://github.com/JamieChopra/Open-Source-Systems-21S2](https://github.com/JamieChopra/Open-Source-Systems-21S2)
 - PHP Web Application development with MySQL backend
 - Development environment included: XAMPP, VS Code, GitHub and WinSCP
 - GET and POST forms
 
 **CO557-21S2 Software Engineering-21S2**
-{: .box-note}
 [https://github.com/JamieChopra/Software-Engineering-21S2/wiki](https://github.com/JamieChopra/Software-Engineering-21S2/wiki)
 - Developed Fire and Security Alarm Monitoring System
 - Ada (Object Oriented Programming)
@@ -162,3 +157,9 @@ Topology 2
 
 
 **CO671-22SB Cyber Security Project-22SB**
+
+<a href="https://github.com/yourusername/yourrepository" target="_blank">
+  <button style="background-color: #6e5494; color: #fff; padding: 10px 20px; border: none; cursor: pointer;">
+    Connect to GitHub to update
+  </button>
+</a>
