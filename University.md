@@ -166,7 +166,7 @@ Topology 2
 </a>
 
 <a href="https://github.com/yourusername/yourrepository" target="_blank">
-  <button style="background-color: #4e97e0; color: #fff; padding: 10px 20px; border: 2px solid #fff; border-radius: 25px; cursor: pointer; display: flex; align-items: center;">
+  <button style="background-color: #4e97e0; color: #fff; padding: 10px 20px; border: 2px solid #fff; border-radius: 22px; cursor: pointer; display: flex; align-items: center;">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="width: 20px; height: 20px; margin-right: 10px;">
     <span style="font-weight: bold;">Your Repository Name</span>
     <br>
