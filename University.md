@@ -123,7 +123,7 @@ This module introduced me to C# programming:
 - Development environment included: XAMPP, VS Code, GitHub and WinSCP
 - GET and POST forms
 
-**CO557-21S2 Software Engineering-21S2**
+## CO557-21S2 Software Engineering-21S2
 
 <a href="https://github.com/JamieChopra/Software-Engineering-21S2/wiki" target="_blank">
   <button style="background-color: #fff; color: #000; padding: 5px 10px; border: 1px solid #000; border-radius: 10px; cursor: pointer;">
