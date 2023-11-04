@@ -23,10 +23,6 @@ navbar-links:
   OSCP: "OSCP"
   Networking: "Networking"
   University: "University"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
