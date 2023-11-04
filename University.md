@@ -215,7 +215,11 @@ This module introduced me to the Prolog logic-based Programming Language
 <br>
 
 ### CO651-22S2 Quality Assurance And Testing
-- Understanding of Software Development Methods including Agile (Scrum), Waterfall, V Model and Spiral Life Cycle
+- Understanding of Software Development Methods including:
+  - Agile (Scrum)
+  - Waterfall
+  - V Model
+  - Spiral Life Cycle
 - Performing static testing including formal documented inspections
 - Whitebox and blackbox testing to discover defects
 - Studied a series of Test Design Techniques including:
