@@ -1116,3 +1116,29 @@ pre {
     display: inline-block;
   }
 }
+
+.home-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-post-button {
+  background-color: #00b894;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.home-post-button:hover {
+  background-color: #018d74;
+  transform: scale(1.05);
+}
