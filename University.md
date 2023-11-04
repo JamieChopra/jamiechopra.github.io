@@ -146,6 +146,7 @@ This module introduced me to JavaScript and JSON Programming Languages
     Open Source Systems-21S2
   </button>
 </a>
+
 This module introduced me to PHP and strengthened my knowledge of SQL
 - PHP Web Application development with MySQL backend
 - Development environment included: XAMPP, VS Code, GitHub and WinSCP
@@ -202,7 +203,9 @@ This module introduced me to the Prolog logic-based Programming Language
 ### CO669-22S1 Security Auditing And Response
 - IT security Policies, Standards, Procedures, and Guidelines
 - Security compliancy in the User Domain, Workstation Domain, LAN Domain, WAN Domain, Remote Access Domain and Application Domain
-- Deep dive into IT Security Auditing Frameworks including ISO 27001 (14 Domains and 114 Controls), NIST 800-53 (20 Control Families)
+- Deep dive into IT Security Auditing Frameworks including:
+    - ISO 27001 (14 Domains and 114 Controls)
+    - NIST 800-53 (20 Control Families)
 - Learnt to prepare, conduct and document an IT Security Audit
 
 <br>
