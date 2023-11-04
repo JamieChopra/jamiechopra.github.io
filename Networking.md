@@ -78,4 +78,4 @@ cover-img: /assets/img/Network/NetworkingBanner.png
 [![DynamicARPInspection](/assets/img/Network/DynamicARPInspection.png)](https://github.com/JamieChopra/jamiechopra.github.io/blob/master/assets/Topologies/DynamicARPInspection.pkt)
 
 ## Wireless LAN
-![Wireless LAN][/assets/img/Network/WirelessLAN.png](https://github.com/JamieChopra/jamiechopra.github.io/blob/master/assets/Topologies/WirelessLAN.pkt)
+[![Wireless LAN](/assets/img/Network/WirelessLAN.png)](https://github.com/JamieChopra/jamiechopra.github.io/blob/master/assets/Topologies/WirelessLAN.pkt)
