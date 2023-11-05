@@ -1116,3 +1116,49 @@ pre {
     display: inline-block;
   }
 }
+
+.home-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-post-button {
+  background-color: #ffffff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Add gap between the image and text */
+  margin: 20px; /* Add margin to create a gap between blog posts */
+}
+
+.home-post-button img {
+  width: 800px;
+  height: 800px;
+}
+
+.home-post-button:hover .post-text {
+  opacity: 1; /* Show text when hovering over the image */
+}
+
+.home-post-text {
+  margin-top: 10px;
+  opacity: 0; /* Initially hide text */
+}
+
+.home-post-button:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+}
