@@ -1119,44 +1119,47 @@ pre {
 
 .home-button-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space between;
   align-items: center;
   width: 80%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0px;
+  padding: 20px;
 }
 
 .home-post-button {
-  background-color: #ffffff;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  padding: 0px; /* Remove padding around the button */
-  border-radius: 5px;
-  border: 1px solid #d3d3d3;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0px; /* Add gap between the image and text */
-  margin: 10px; /* Add margin to create a gap between blog posts */
-}
-
-.post-text {
-  display: none; /* Hide the text */
-}
-
-.home-post-button img {
+  position: relative;
   width: 400px;
   height: 400px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.home-post-button:hover .post-text {
-  opacity: 1; /* Initially hidden, show text when hovering over the image */
+.home-post-image {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s;
 }
 
-.container, .container-md, .container-sm {
-  max-width: 100%;
+.home-post-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s;
+}
+
+.home-post-button:hover .home-post-image {
+  opacity: 0.7; /* Semi-transparent image when hovering */
+}
+
+.home-post-button:hover .home-post-text {
+  opacity: 1; /* Show title when hovering */
 }
