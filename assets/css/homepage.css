@@ -1156,7 +1156,6 @@ pre {
   transition: opacity 0.3s; /* Add opacity transition */
   z-index: -1; /* Place the text behind the image */
   border-bottom: 2px solid #000; /* Add a bottom border with desired styling */
-  width: 20%; /* Adjust the width of the underline as a percentage of the text width */
   font-size: 1.5rem; /* Adjust the font size for an h3 heading (you can adjust the size as needed) */
   color: #000; /* Set the text color to black */
   font-weight: bold; /* Optional: Set the text to be bold */
