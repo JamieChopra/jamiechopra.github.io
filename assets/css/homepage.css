@@ -1133,7 +1133,7 @@ pre {
   text-align: center;
   text-decoration: none;
   padding: 0px; /* Remove padding around the button */
-  border-radius: 5px; 
+  border-radius: 5px;
   border: 1px solid #d3d3d3;
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s;
@@ -1144,25 +1144,19 @@ pre {
   margin: 10px; /* Add margin to create a gap between blog posts */
 }
 
+.post-text {
+  display: none; /* Hide the text */
+}
+
 .home-post-button img {
   width: 400px;
   height: 400px;
 }
 
 .home-post-button:hover .post-text {
-  opacity: 1; /* Show text when hovering over the image */
-}
-
-.home-post-text {
-  margin-top: 10px;
-  opacity: 0; /* Initially hide text */
-}
-
-.home-post-button:hover {
-  background-color: #ffffff;
-  transform: scale(1.05);
+  opacity: 1; /* Initially hidden, show text when hovering over the image */
 }
 
 .container, .container-md, .container-sm {
-    max-width: 100%;
+  max-width: 100%;
 }
