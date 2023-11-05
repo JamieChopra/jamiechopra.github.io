@@ -1146,6 +1146,7 @@ pre {
 .home-post-button img {
   width: 200px;
   height: 200px;
+  border-radius: 80%;
 }
 
 .home-post-button:hover .post-text {
