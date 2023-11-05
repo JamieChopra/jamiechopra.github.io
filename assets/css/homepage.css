@@ -1166,3 +1166,8 @@ pre {
 .container, .container-md, .container-sm {
     max-width: 100%;
 }
+
+@media (min-width: 768px)
+.container, .container-md, .container-sm {
+    max-width: 720px;
+}
