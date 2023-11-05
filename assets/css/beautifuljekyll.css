@@ -1141,6 +1141,7 @@ pre {
   flex-direction: column;
   align-items: center;
   gap: 10px; /* Add gap between the image and text */
+  margin: 20px; /* Add margin to create a gap between blog posts */
 }
 
 .home-post-button img {
