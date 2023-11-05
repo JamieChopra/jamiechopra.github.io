@@ -1173,7 +1173,7 @@ pre {
 }
 
 .home-post-button:hover img {
-  opacity: 0; /* Fade out the image on hover */
+  opacity: 0.3; /* Fade out the image on hover */
 }
 
 .home-post-button:hover .home-post-text {
