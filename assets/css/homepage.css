@@ -1142,10 +1142,19 @@ pre {
   align-items: center;
   gap: 0px; /* Add gap between the image and text */
   margin: 10px; /* Add margin to create a gap between blog posts */
+  position: relative; /* Add this for positioning */
+  overflow: hidden; /* Hide overflowing text */
 }
 
 .post-text {
-  display: none; /* Hide the text */
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s; /* Add opacity transition */
+  z-index: -1; /* Place the text behind the image */
 }
 
 .home-post-button img {
