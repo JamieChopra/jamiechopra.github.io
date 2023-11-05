@@ -1122,7 +1122,7 @@ pre {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  max-width: 120%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -1145,8 +1145,8 @@ pre {
 }
 
 .home-post-button img {
-  width: 800px;
-  height: 800px;
+  width: 140px;
+  height: 140px;
 }
 
 .home-post-button:hover .post-text {
