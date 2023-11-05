@@ -1151,7 +1151,7 @@ pre {
 .home-post-button img {
   width: 400px;
   height: 400px;
-  border-radius: 80%;
+  border-radius: 98%;
 }
 
 .home-post-button:hover .post-text {
