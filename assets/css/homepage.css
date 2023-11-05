@@ -1163,7 +1163,6 @@ pre {
   transform: scale(1.05);
 }
 
-@media (min-width: 768px)
 .container, .container-md, .container-sm {
     max-width: 100%;
 }
