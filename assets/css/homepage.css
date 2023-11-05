@@ -1146,7 +1146,7 @@ pre {
   overflow: hidden; /* Hide overflowing text */
 }
 
-.post-text {
+.home-post-text {
   display: block;
   position: absolute;
   top: 50%;
