@@ -1140,7 +1140,7 @@ pre {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 80px; /* Add gap between the image and text */
+  gap: 0px; /* Add gap between the image and text */
   margin: 10px; /* Add margin to create a gap between blog posts */
 }
 
