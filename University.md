@@ -5,7 +5,6 @@ subtitle: BSc (Hons) Cyber Security
 cover-img: /assets/img/UniversityBookshelves.png
 ---
 # <u style="text-decoration: underline;">Year 1</u>
-<br>
 
 ### CO450-20S1 Computer Architectures
 
