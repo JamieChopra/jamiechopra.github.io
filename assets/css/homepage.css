@@ -1199,6 +1199,10 @@ pre {
   opacity: 1; /* Show text on hover */
 }
 
+.home-post-button:hover .home-post-text::before {
+  transform: scaleX(1); /* Ensure the underline maintains full opacity on hover */
+}
+
 .container, .container-md, .container-sm {
   max-width: 100%;
 }
