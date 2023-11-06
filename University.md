@@ -53,7 +53,8 @@ This module taught me communication skills and professional practice by providin
 ### CO403-20S2 Secure Systems
 - Developed mock IT Security Policies for organizations
 - Learnt the fundamentals of Confidentiality, Integrity and Availability (CIA)
-- Learnt Risk Management Frameworks (RMF) including: ISO27001, NIST 800-53 and COBIT
+- Learnt Risk Management Frameworks (RMF) including: 
+  - ISO27001, NIST 800-53 and COBIT
 - Learnt PCI DSS compliancy requirements
 - Developed Business Continuity Plans (BCPs) and Disaster Recovery Plans (DCPs)
 
@@ -133,6 +134,7 @@ This module introduced me to SQL
     Mobile Systems Security-21S2
   </button>
 </a>
+
 This module introduced me to JavaScript and JSON Programming Languages
 - Developed a Mobile Application
 
@@ -186,13 +188,13 @@ During this module I investigated and learnt the structure of Neural Networks
 </a>
 
 This module introduced me to the Prolog logic-based Programming Language
-- Knowledge Representation Techniques
+- Breadth First Search (BFS) and Depth First Search (DFS)
+- Heuristic Search Techniques including Means-End Analysis and Best First Search Algorithms
+- Knowledge Representation (KR) Techniques
   - Logic Representation
   - Semantic Networks
   - Production Rules
   - Frame Representation
-- Breadth First Search (BFS) and Depth First Search (DFS)
-- Heuristic Search Techniques including Means-End Analysis and Best First Search Algorithms
 
 <br>
 
@@ -222,12 +224,12 @@ This module introduced me to the Prolog logic-based Programming Language
   - Spiral Life Cycle
 - Performing static testing including formal documented inspections
 - Whitebox and blackbox testing to discover defects
+- Conducting IEEE 829 compliant incident reports
 - Studied a series of Test Design Techniques including:
   - Equivilance Partitioning (EP)
   - Boundary Value Analysis (BVA)
   - Decision Table Testing (DTT)
   - State Transition Testing (STT)
-- Conducting IEEE 829 compliant incident reports
 
 <br>
 
@@ -250,7 +252,16 @@ Topology 2 includes:
 <br>
 
 ### CO670-22S2 Secure Business Management
-
+Information systems security (ISS) and security policy frameworks
+Policy Change Control Board (CCB) purpose and roles
+Created a series of policies including
+- Acceptable Use Policy (AUP)
+- Privileged-level Access Agreement (PAA)
+- Security awareness policy (SAP)
+- Confidentiality Policy
+- Change Management Policy
+- Remote Access Policy
+- Information Security Policy
 <br>
 
 ### CO671-22SB Cyber Security Project
