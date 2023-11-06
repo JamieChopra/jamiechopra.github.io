@@ -1149,7 +1149,7 @@ pre {
 .home-post-text {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0; /* Initially hidden */
@@ -1211,7 +1211,7 @@ pre {
 
 .home-text-box {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
