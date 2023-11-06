@@ -4,7 +4,7 @@ title: Buckinghamshire New University
 subtitle: BSc (Hons) Cyber Security
 cover-img: /assets/img/UniversityBookshelves.png
 ---
-# Year 1
+# <u style="text-decoration: underline;">Year 1</u>
 <br>
 
 ### CO450-20S1 Computer Architectures
@@ -252,19 +252,19 @@ This module consisted of configuring protocols for Network Security by creating 
 <br>
 
 ### CO670-22S2 Secure Business Management
-Information systems security (ISS) and security policy frameworks
-Policy Change Control Board (CCB) purpose and roles
-Created a series of policies including
-- Acceptable Use Policy (AUP)
-- Privileged-level Access Agreement (PAA)
-- Security awareness policy (SAP)
-- Confidentiality Policy
-- Change Management Policy
-- Remote Access Policy
-- Information Security Policy
+- Information systems security (ISS) and security policy frameworks
+- Policy Change Control Board (CCB) purpose and roles
+- Created a series of policies including
+  - Acceptable Use Policy (AUP)
+  - Privileged-level Access Agreement (PAA)
+  - Security awareness policy (SAP)
+  - Confidentiality Policy
+  - Change Management Policy
+  - Remote Access Policy
+  - Information Security Policy
 <br>
 
-### CO671-22SB Cyber Security Project
+### CO671-22SB Cyber Security Project (Dissertation)
 
 Heres a [link](https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:84bb2d55-13fb-4129-a483-6be0b125d4ba) to my dissertation
 
