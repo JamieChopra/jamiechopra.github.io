@@ -1219,8 +1219,8 @@ pre {
   z-index: -1; /* Place the text box behind the image and heading */
   background-color: #ffffff;
   padding: 10px; /* Adjust padding as needed */
-  border-radius: 25px;
-  width: 80%; /* Adjust the width as desired (e.g., 80% for a wider box) */
+  border-radius: 10px;
+  width: 90%; /* Adjust the width as desired (e.g., 80% for a wider box) */
 }
 
 .home-post-button:hover .home-text-box {
