@@ -5,6 +5,8 @@ subtitle: CCNA
 cover-img: /assets/img/Network/NetworkingBanner.png
 ---
 
+Each configuration can be clicked to download the .pkt file.
+
 ## Router-on-a-stick
 [![ROAS](/assets/img/Network/Router-on-a-stick.png)](https://github.com/JamieChopra/jamiechopra.github.io/blob/master/assets/Topologies/Router-on-a-stick.pkt)
 
