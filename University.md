@@ -90,8 +90,7 @@ This module introduced me to C# programming
 
 <br>
 
-# Year 2
-<br>
+# <u style="text-decoration: underline;">Year 2</u>
 
 ### CO506-21S1 Information Security
 - Access Control Systems & the Principle of Least Privilege (Windows)
@@ -175,8 +174,7 @@ During this module I investigated and learnt the structure of Neural Networks
 
 <br>
 
-# Year 3
-<br>
+# <u style="text-decoration: underline;">Year 3</u>
 
 ### CO652-22S1 Knowledge-Based Systems In Artificial Intelligence
 <a href="https://github.com/JamieChopra/Knowledge-Based-Systems---CW1" target="_blank">
