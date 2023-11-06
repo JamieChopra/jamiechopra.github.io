@@ -1218,8 +1218,8 @@ pre {
   transition: opacity 0.3s;
   z-index: -1; /* Place the text box behind the image and heading */
   background-color: #ffffff;
-  padding: 2px; /* Adjust padding as needed */
-  border-radius: 25px;
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 2px;
 }
 
 .home-post-button:hover .home-text-box {
