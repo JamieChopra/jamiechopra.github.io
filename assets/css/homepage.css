@@ -1211,9 +1211,9 @@ pre {
 
 .home-text-box {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
-  transform: translate(-50%, -70%);
+  transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.3s;
   z-index: -1; /* Place the text box behind the image and heading */
