@@ -1206,37 +1206,18 @@ pre {
 /* Text Box */
 
 .home-text-box {
-  text-align: center; /* Center the text horizontally */
-  padding: 10px; /* Add some padding around the text box */
-  background-color: #ffffff;
-  font-weight: bold;
-  border-radius: 25px;
-  position: relative;
-  z-index: 2; /* Place the text box above the image and the underlined heading */
-}
-
-.home-text-box::before {
-  content: "";
   position: absolute;
-  width: 0;
-  height: 0;
-  bottom: -10px; /* Adjust the distance between the text box and the underline */
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  border-left: 10px solid transparent; /* Adjust the size to control the "peeled" corner */
-  border-top: 10px solid #ffffff; /* Adjust the size and color to match your background */
-  transform: rotate(45deg); /* Rotate the pseudo-element to create the folded corner effect */
-  transform-origin: center bottom;
-  z-index: 1; /* Place the pseudo-element on top of the text box */
-}
-
-.home-text-box:hover {
-  /* Add hover styles for the text box, if needed */
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: -1; /* Place the text box behind the image and heading */
   background-color: #ffffff;
+  padding: 10px; /* Adjust padding as needed */
   border-radius: 25px;
 }
 
-.home-text-box:hover::before {
-  /* Add hover styles for the pseudo-element, if needed */
-  border-top: 10px solid #ffffff; /* Adjust the color on hover */
+.home-post-button:hover .home-text-box {
+  opacity: 1; /* Show text on hover */
 }
