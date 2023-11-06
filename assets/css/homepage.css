@@ -1213,12 +1213,12 @@ pre {
   position: absolute;
   top: 62%;
   left: 50%;
-  transform: translate(-80%, -80%);
+  transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.3s;
   z-index: -1; /* Place the text box behind the image and heading */
   background-color: #ffffff;
-  padding: 10px; /* Adjust padding as needed */
+  padding: 2px; /* Adjust padding as needed */
   border-radius: 25px;
 }
 
