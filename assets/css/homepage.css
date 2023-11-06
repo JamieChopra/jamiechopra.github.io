@@ -1170,20 +1170,6 @@ pre {
   position: relative; /* Add relative positioning to the image */
 }
 
-.home-post-button img::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  bottom: 0;
-  right: 0;
-  border-left: 50px solid transparent; /* Adjust the size to control the "peeled" corner */
-  border-top: 50px solid #ffffff; /* Adjust the size and color to match your background */
-  transform: rotate(45deg); /* Rotate the pseudo-element to create the folded corner effect */
-  transform-origin: right bottom;
-  z-index: 1; /* Place the pseudo-element on top of the image */
-}
-
 .home-post-button:hover {
   background-color: #ffffff;
   border-radius: 25px;
