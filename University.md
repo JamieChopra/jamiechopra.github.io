@@ -237,14 +237,14 @@ This module introduced me to the Prolog logic-based Programming Language
 
 This module consisted of configuring protocols for Network Security by creating and configuring two simulated secure network topologies implementing a series of security configurations    
 
-Topology 1 includes:
+[Topology 1](https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:b5743a0f-edb8-4cfa-8234-efa801b8e69e) includes:
 - Firewall Configuration
 - Access Control List Configuration
 - Securing internal HTTP Web Server
 - SSH Configuration
 - DNS Server Configuration
 
-Topology 2 includes:
+[Topology 2](https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:de0e13d2-e593-4dd8-aafa-67f164f67d71) includes:
 - DHCP Pool Configuration
 - DMZ Configuration
 - Network Address Translation (NAT)
@@ -265,3 +265,7 @@ Created a series of policies including
 <br>
 
 ### CO671-22SB Cyber Security Project
+
+Heres a [link](https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:84bb2d55-13fb-4129-a483-6be0b125d4ba) to my dissertation
+
+For my dissertation I performed an ISO 27001 internal audit on an NHS contracted Dental Practice to evaluate their Information Security Management System (ISMS) for improvements.
