@@ -1128,46 +1128,44 @@ pre {
 }
 
 .home-post-button {
-  background-color: #ffffff;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  padding: 0px; /* Remove padding around the button */
-  border-radius: 25px;
-  /* border: 1px solid #d3d3d3; */
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0px; /* Add gap between the image and text */
-  margin: 10px; /* Add margin to create a gap between blog posts */
-  position: relative; /* Add this for positioning */
-  overflow: hidden; /* Hide overflowing text */
+  gap: 0px;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .home-post-text {
-  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s; /* Add opacity transition */
-  z-index: -1; /* Place the text behind the image */
-  border-bottom: 2px solid #000; /* Add a bottom border with desired styling */
-  font-size: 1.5rem; /* Adjust the font size for an h3 heading (you can adjust the size as needed) */
-  color: #000; /* Set the text color to black */
-  font-weight: bold; /* Optional: Set the text to be bold */
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+  border-bottom: 2px solid #000;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
 }
 
 .home-post-button img {
   width: 400px;
   height: 400px;
   border-radius: 25px;
-  opacity: 1; /* Initially fully visible */
-  transition: opacity 0.3s; /* Add opacity transition */
-  position: relative; /* Add relative positioning to the image */
+  opacity: 1;
+  transition: opacity 0.3s;
+  position: relative;
 }
 
 .home-post-button img::before {
@@ -1177,33 +1175,45 @@ pre {
   height: 0;
   bottom: 0;
   right: 0;
-  border-left: 50px solid transparent; /* Adjust the size to control the "peeled" corner */
-  border-top: 50px solid #ffffff; /* Adjust the size and color to match your background */
-  transform: rotate(45deg); /* Rotate the pseudo-element to create the folded corner effect */
+  border-left: 50px solid transparent;
+  border-top: 50px solid #ffffff;
+  transform: rotate(45deg);
   transform-origin: right bottom;
-  z-index: 1; /* Place the pseudo-element on top of the image */
+  z-index: 1;
+}
+
+.home-post-text::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+  z-index: 2;
 }
 
 .home-post-button:hover {
   background-color: #ffffff;
   border-radius: 25px;
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box-shadow on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .home-post-button:hover img {
-  opacity: 0.3; /* Fade out the image on hover */
+  opacity: 0.3;
 }
 
 .home-post-button:hover .home-post-text {
-  opacity: 1; /* Show text on hover */
+  opacity: 1;
 }
 
-.container, .container-md, .container-sm {
-  max-width: 100%;
+.home-post-button:hover .home-post-text::before {
+  transform: scaleX(1);
 }
-
-/* Text Box */
 
 .home-text-box {
   position: absolute;
@@ -1212,12 +1222,12 @@ pre {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.3s;
-  z-index: -1; /* Place the text box behind the image and heading */
+  z-index: 0;
   background-color: #ffffff;
-  padding: 10px; /* Adjust padding as needed */
+  padding: 10px;
   border-radius: 25px;
 }
 
 .home-post-button:hover .home-text-box {
-  opacity: 1; /* Show text on hover */
+  opacity: 1;
 }
