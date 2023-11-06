@@ -1131,19 +1131,19 @@ pre {
 }
 
 .home-post-button .home-post-text {
-  position: relative;
-  top: auto;
-  left: auto;
-  transform: none;
+  position: absolute;
+  top: -50px; /* Adjust the vertical position above the text box */
+  left: 50%;
+  transform: translateX(-50%);
   opacity: 1; /* Make the text initially visible */
   transition: opacity 0.3s; /* Add opacity transition */
-  z-index: 1; /* Place the text on top of the text box */
-  border: none; /* Remove the bottom border */
-  margin: 0; /* Reset margin to zero */
+  z-index: 1; /* Place the text above the text box */
   font-size: 1.5rem; /* Adjust the font size for an h3 heading (you can adjust the size as needed) */
   color: #000; /* Set the text color to black */
   font-weight: bold; /* Optional: Set the text to be bold */
+  border-bottom: 2px solid #000; /* Add a bottom border with desired styling */
 }
+
 
 .home-post-button .home-post-text::before {
   content: "";
